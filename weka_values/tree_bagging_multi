@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1,3-4,7-10,13-14,16-18
+Instances:    246
+Attributes:   8
+              SEX
+              FATIGUE
+              MALAISE
+              SPIDERS
+              ASCITES
+              ALK_PHOSPHATE
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.J48 -C 0.25 -M 2
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         217               88.2114 %
+Incorrectly Classified Instances        29               11.7886 %
+Kappa statistic                          0.7642
+Mean absolute error                      0.1987
+Root mean squared error                  0.3127
+Relative absolute error                 39.7341 %
+Root relative squared error             62.5396 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.951    0.187    0.836      0.951    0.890      0.772    0.936     0.931     DIE
+                 0.813    0.049    0.943      0.813    0.873      0.772    0.936     0.911     LIVE
+Weighted Avg.    0.882    0.118    0.890      0.882    0.882      0.772    0.936     0.921     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 117   6 |   a = DIE
+  23 100 |   b = LIVE
+
