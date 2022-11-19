@@ -1,0 +1,191 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1,3-4,7-10,13-14,16-18
+Instances:    246
+Attributes:   8
+              SEX
+              FATIGUE
+              MALAISE
+              SPIDERS
+              ASCITES
+              ALK_PHOSPHATE
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+JRIP rules:
+===========
+
+(SPIDERS = no) and (HISTOLOGY = no) => Class=LIVE (70.0/2.0)
+(SPIDERS = no) and (MALAISE = no) => Class=LIVE (24.0/2.0)
+(SEX = male) => Class=LIVE (6.0/0.0)
+(FATIGUE = no) => Class=LIVE (5.0/1.0)
+(ALK_PHOSPHATE = 215) => Class=LIVE (2.0/0.0)
+ => Class=DIE (139.0/21.0)
+
+Number of Rules : 6
+
+
+Weight: 2.14
+
+JRIP rules:
+===========
+
+(ASCITES = yes) => Class=DIE (59.693706293706455/24.212937062937076)
+(ALK_PHOSPHATE = 65) => Class=DIE (7.268181818181823/0.0)
+(ALK_PHOSPHATE = 84) => Class=DIE (5.848951048951052/0.0)
+(ALK_PHOSPHATE = 243) => Class=DIE (4.730769230769233/0.0)
+(MALAISE = yes) and (ALK_PHOSPHATE = 85) and (SPIDERS = yes) => Class=DIE (18.708041958041953/4.730769230769233)
+(ALK_PHOSPHATE = 280) => Class=DIE (4.730769230769233/0.0)
+(ALK_PHOSPHATE = 82) => Class=DIE (3.913636363636366/0.5590909090909093)
+ => Class=LIVE (141.1059440559443/14.235314685314684)
+
+Number of Rules : 8
+
+
+Weight: 1.53
+
+JRIP rules:
+===========
+
+(SPIDERS = no) and (MALAISE = yes) => Class=DIE (60.00098161156157/29.286695180444063)
+ => Class=LIVE (185.99901838843837/55.165280806765445)
+
+Number of Rules : 2
+
+
+Weight: 0.65
+
+JRIP rules:
+===========
+
+(ASCITES = no) and (ALK_PHOSPHATE = 84) => Class=DIE (5.180412432349638/0.0)
+(ASCITES = no) and (ALK_PHOSPHATE = 67) => Class=DIE (6.869799490313747/0.0)
+(ALK_PHOSPHATE = 65) => Class=DIE (7.922983720064152/0.0)
+(ALK_PHOSPHATE = 63) => Class=DIE (6.268748408364674/0.0)
+ => Class=LIVE (219.75805594890778/77.48882755824968)
+
+Number of Rules : 5
+
+
+Weight: 0.78
+
+JRIP rules:
+===========
+
+(ASCITES = yes) and (ALK_PHOSPHATE = 160) => Class=LIVE (7.393613020681106/0.0)
+(ASCITES = yes) and (ALK_PHOSPHATE = 85) and (SPIDERS = no) => Class=LIVE (14.143228264868197/0.0)
+ => Class=DIE (224.46315871445174/82.30858829924576)
+
+Number of Rules : 3
+
+
+Weight: 0.69
+
+JRIP rules:
+===========
+
+(ALK_PHOSPHATE = 85) and (HISTOLOGY = no) => Class=DIE (42.77827736722101/17.187120812718348)
+(ASCITES = no) and (SPIDERS = yes) => Class=DIE (67.66846369224272/32.059468707864234)
+ => Class=LIVE (135.55325894053712/45.61676682843552)
+
+Number of Rules : 3
+
+
+Weight: 0.47
+
+JRIP rules:
+===========
+
+ => Class=LIVE (246.00000000000065/108.95349039599795)
+
+Number of Rules : 1
+
+
+Weight: 0.23
+
+JRIP rules:
+===========
+
+(MALAISE = yes) and (ALK_PHOSPHATE = 85) => Class=DIE (75.91028569471332/33.914382567637176)
+(ALK_PHOSPHATE = 62) => Class=DIE (9.398131060426193/0.6187383584617482)
+(ASCITES = yes) and (SPIDERS = no) => Class=DIE (12.854334385891518/1.824448659162583)
+(ALK_PHOSPHATE = 280) => Class=DIE (3.8242132927381327/0.0)
+(ALK_PHOSPHATE = 67) => Class=DIE (3.4617762305462803/0.0)
+(ALK_PHOSPHATE = 127) => Class=DIE (2.50938528698142/0.0)
+(ALK_PHOSPHATE = 243) => Class=DIE (7.315330323814553/0.0)
+(ALK_PHOSPHATE = 65) => Class=DIE (4.436555953458747/0.0)
+(ALK_PHOSPHATE = 86) => Class=DIE (5.187234229613956/0.0)
+(ALK_PHOSPHATE = 107) => Class=DIE (2.50938528698142/0.0)
+(ALK_PHOSPHATE = 84) => Class=DIE (2.6104733694222264/0.0)
+(ALK_PHOSPHATE = 167) => Class=DIE (2.50938528698142/0.0)
+(ALK_PHOSPHATE = 90) => Class=DIE (2.50938528698142/0.0)
+(ALK_PHOSPHATE = 109) => Class=DIE (2.090002471661008/0.0)
+(ALK_PHOSPHATE = 82) => Class=DIE (4.80208371994219/0.9537615535383825)
+(ALK_PHOSPHATE = 85) and (HISTOLOGY = no) and (SPIDERS = yes) => Class=DIE (7.52815586094426/0.0)
+(ALK_PHOSPHATE = 135) => Class=DIE (2.502494710635507/0.41249223897449877)
+ => Class=LIVE (94.04138754826728/8.76521092604116)
+
+Number of Rules : 18
+
+
+Weight: 1.46
+
+JRIP rules:
+===========
+
+(HISTOLOGY = yes) and (SPIDERS = yes) and (ASCITES = yes) => Class=DIE (70.52283190777165/33.804808713540474)
+(ALK_PHOSPHATE = 155) => Class=DIE (4.637108037133888/0.12715227260020623)
+ => Class=LIVE (170.84006005509593/52.3894869851963)
+
+Number of Rules : 3
+
+
+Weight: 0.62
+
+JRIP rules:
+===========
+
+(SPIDERS = no) and (ALK_PHOSPHATE = 243) => Class=DIE (6.42626568569431/0.0)
+ => Class=LIVE (239.57373431430813/99.98167137286919)
+
+Number of Rules : 2
+
+
+Weight: 0.38
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         216               87.8049 %
+Incorrectly Classified Instances        30               12.1951 %
+Kappa statistic                          0.7561
+Mean absolute error                      0.1414
+Root mean squared error                  0.3088
+Relative absolute error                 28.2816 %
+Root relative squared error             61.7455 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.902    0.146    0.860      0.902    0.881      0.757    0.917     0.876     DIE
+                 0.854    0.098    0.897      0.854    0.875      0.757    0.917     0.891     LIVE
+Weighted Avg.    0.878    0.122    0.879      0.878    0.878      0.757    0.917     0.883     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 111  12 |   a = DIE
+  18 105 |   b = LIVE
+
