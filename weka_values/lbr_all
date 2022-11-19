@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.LBR 
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1
+Instances:    246
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+=== LBR Run information ===
+
+Scheme:       weka.classifiers.LBR
+Relation:     Class
+Instances:    246
+Attributes:   20
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         225               91.4634 %
+Incorrectly Classified Instances        21                8.5366 %
+Kappa statistic                          0.8293
+Mean absolute error                      0.0969
+Root mean squared error                  0.264 
+Relative absolute error                 19.3834 %
+Root relative squared error             52.7855 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.959    0.130    0.881      0.959    0.918      0.833    0.975     0.977     DIE
+                 0.870    0.041    0.955      0.870    0.911      0.833    0.975     0.973     LIVE
+Weighted Avg.    0.915    0.085    0.918      0.915    0.914      0.833    0.975     0.975     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 118   5 |   a = DIE
+  16 107 |   b = LIVE
+
