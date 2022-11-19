@@ -1,0 +1,129 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1,3-4,6-7,10-15,18-19
+Instances:    246
+Attributes:   7
+              SEX
+              FATIGUE
+              LIVER_BIG
+              LIVER_FIRM
+              SGOT
+              ALBUMIN
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:61/61 (246)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class DIE :
+-4.78 + 
+[SEX=female] * 1.86 +
+[FATIGUE=yes] * 2    +
+[LIVER_BIG=yes] * 0.35 +
+[LIVER_FIRM=yes] * -0.34 +
+[SGOT=16] * 0.6  +
+[SGOT=19] * 2.09 +
+[SGOT=20] * 1.4  +
+[SGOT=23] * 3.83 +
+[SGOT=28] * 1.96 +
+[SGOT=49] * 3.24 +
+[SGOT=55] * 1.86 +
+[SGOT=60] * 0.72 +
+[SGOT=68] * 0.86 +
+[SGOT=70] * 1.5  +
+[SGOT=80] * 1.42 +
+[SGOT=98] * 1.25 +
+[SGOT=120] * 1.36 +
+[SGOT=153] * 2.58 +
+[SGOT=157] * 2.17 +
+[SGOT=182] * 1.08 +
+[SGOT=242] * 0.81 +
+[ALBUMIN=2.1] * 0.76 +
+[ALBUMIN=2.2] * 1.89 +
+[ALBUMIN=2.4] * 1.52 +
+[ALBUMIN=2.6] * 2.11 +
+[ALBUMIN=2.8] * 1.79 +
+[ALBUMIN=2.9] * -0.7 +
+[ALBUMIN=3] * -0.75 +
+[ALBUMIN=3.3] * 1.37 +
+[ALBUMIN=3.7] * -0.7 +
+[ALBUMIN=3.9] * -0.64 +
+[ALBUMIN=4.1] * -1.56 +
+[ALBUMIN=4.2] * -0.46 +
+[ALBUMIN=4.3] * -0.76 +
+[ALBUMIN=4.4] * -0.75
+
+Class LIVE :
+4.78 + 
+[SEX=female] * -1.86 +
+[FATIGUE=yes] * -2 +
+[LIVER_BIG=yes] * -0.35 +
+[LIVER_FIRM=yes] * 0.34 +
+[SGOT=16] * -0.6 +
+[SGOT=19] * -2.09 +
+[SGOT=20] * -1.4 +
+[SGOT=23] * -3.83 +
+[SGOT=28] * -1.96 +
+[SGOT=49] * -3.24 +
+[SGOT=55] * -1.86 +
+[SGOT=60] * -0.72 +
+[SGOT=68] * -0.86 +
+[SGOT=70] * -1.5 +
+[SGOT=80] * -1.42 +
+[SGOT=98] * -1.25 +
+[SGOT=120] * -1.36 +
+[SGOT=153] * -1.07 +
+[SGOT=157] * -2.17 +
+[SGOT=182] * -2.59 +
+[SGOT=242] * -0.81 +
+[ALBUMIN=2.1] * -0.76 +
+[ALBUMIN=2.2] * -1.89 +
+[ALBUMIN=2.4] * -1.52 +
+[ALBUMIN=2.6] * -2.11 +
+[ALBUMIN=2.8] * -1.79 +
+[ALBUMIN=2.9] * 0.7  +
+[ALBUMIN=3] * 0.75 +
+[ALBUMIN=3.3] * -1.37 +
+[ALBUMIN=3.7] * 0.7  +
+[ALBUMIN=3.9] * 0.64 +
+[ALBUMIN=4.1] * 1.56 +
+[ALBUMIN=4.2] * 0.46 +
+[ALBUMIN=4.3] * 0.76 +
+[ALBUMIN=4.4] * 0.75
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         227               92.2764 %
+Incorrectly Classified Instances        19                7.7236 %
+Kappa statistic                          0.8455
+Mean absolute error                      0.1631
+Root mean squared error                  0.2748
+Relative absolute error                 32.6203 %
+Root relative squared error             54.953  %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.894    0.049    0.948      0.894    0.921      0.847    0.945     0.944     DIE
+                 0.951    0.106    0.900      0.951    0.925      0.847    0.945     0.919     LIVE
+Weighted Avg.    0.923    0.077    0.924      0.923    0.923      0.847    0.945     0.932     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 110  13 |   a = DIE
+   6 117 |   b = LIVE
+
