@@ -1,0 +1,206 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1,3,6-10,13-19
+Instances:    246
+Attributes:   6
+              SEX
+              ANTIVIRALS
+              FATIGUE
+              SPIDERS
+              ASCITES
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+FATIGUE = no: LIVE (54.0/2.0)
+FATIGUE = yes
+|   SPIDERS = no
+|   |   ASCITES = no: LIVE (55.0/11.0)
+|   |   ASCITES = yes: DIE (15.0/2.0)
+|   SPIDERS = yes
+|   |   SEX = male: LIVE (6.0)
+|   |   SEX = female
+|   |   |   ANTIVIRALS = no: DIE (112.0/16.0)
+|   |   |   ANTIVIRALS = yes: LIVE (4.0/1.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Weight: 1.9
+
+J48 pruned tree
+------------------
+
+SEX = male: LIVE (9.2)
+SEX = female
+|   FATIGUE = no
+|   |   SPIDERS = no: LIVE (29.13/3.84)
+|   |   SPIDERS = yes: DIE (6.14/2.3)
+|   FATIGUE = yes
+|   |   SPIDERS = no: DIE (79.28/29.53)
+|   |   SPIDERS = yes
+|   |   |   ASCITES = no
+|   |   |   |   ANTIVIRALS = no: LIVE (76.59/30.46)
+|   |   |   |   ANTIVIRALS = yes: DIE (5.57/1.72)
+|   |   |   ASCITES = yes: DIE (40.09/15.37)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 0.67
+
+J48 pruned tree
+------------------
+
+SEX = male: LIVE (6.95)
+SEX = female
+|   FATIGUE = no: LIVE (31.09/8.58)
+|   FATIGUE = yes
+|   |   ASCITES = no
+|   |   |   ANTIVIRALS = no: DIE (135.25/61.19)
+|   |   |   ANTIVIRALS = yes: LIVE (14.3/5.81)
+|   |   ASCITES = yes: LIVE (58.4/24.32)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Weight: 0.38
+
+J48 pruned tree
+------------------
+: LIVE (246.0/110.02)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Weight: 0.21
+
+J48 pruned tree
+------------------
+
+SEX = male: LIVE (5.29)
+SEX = female
+|   SPIDERS = no: LIVE (103.98/46.93)
+|   SPIDERS = yes: DIE (136.72/60.65)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Weight: 0.25
+
+J48 pruned tree
+------------------
+
+SEX = male: LIVE (4.7)
+SEX = female
+|   FATIGUE = no: LIVE (28.38/12.49)
+|   FATIGUE = yes
+|   |   SPIDERS = no: DIE (82.48/37.77)
+|   |   SPIDERS = yes
+|   |   |   ANTIVIRALS = no
+|   |   |   |   ASCITES = no: LIVE (82.03/37.65)
+|   |   |   |   ASCITES = yes: DIE (42.63/19.78)
+|   |   |   ANTIVIRALS = yes: DIE (5.77/2.22)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Weight: 0.21
+
+J48 pruned tree
+------------------
+: LIVE (246.0/120.38)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Weight: 0.04
+
+J48 pruned tree
+------------------
+
+SEX = male: LIVE (4.16)
+SEX = female: DIE (241.84/118.84)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Weight: 0.07
+
+J48 pruned tree
+------------------
+: LIVE (246.0/118.97)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Weight: 0.07
+
+J48 pruned tree
+------------------
+
+SEX = male: LIVE (3.9)
+SEX = female: DIE (242.1/119.1)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Weight: 0.06
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         212               86.1789 %
+Incorrectly Classified Instances        34               13.8211 %
+Kappa statistic                          0.7236
+Mean absolute error                      0.2212
+Root mean squared error                  0.3416
+Relative absolute error                 44.2408 %
+Root relative squared error             68.3221 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.886    0.163    0.845      0.886    0.865      0.724    0.878     0.814     DIE
+                 0.837    0.114    0.880      0.837    0.858      0.724    0.878     0.862     LIVE
+Weighted Avg.    0.862    0.138    0.863      0.862    0.862      0.724    0.878     0.838     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 109  14 |   a = DIE
+  20 103 |   b = LIVE
+
