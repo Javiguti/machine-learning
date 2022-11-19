@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1-4,6-10,13,15-16,18-19
+Instances:    246
+Attributes:   6
+              FATIGUE
+              SPIDERS
+              ASCITES
+              BILIRUBIN
+              ALBUMIN
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(SPIDERS = yes) and (ASCITES = yes) => Class=DIE (47.0/4.0)
+(SPIDERS = yes) and (ALBUMIN = 4) => Class=DIE (38.0/2.0)
+(ASCITES = yes) => Class=DIE (15.0/2.0)
+(SPIDERS = yes) and (BILIRUBIN = 2) => Class=DIE (8.0/1.0)
+(BILIRUBIN = 0.4) => Class=DIE (8.0/1.0)
+(SPIDERS = yes) and (BILIRUBIN = 0.5) => Class=DIE (4.0/0.0)
+(SPIDERS = yes) and (ALBUMIN = 3.3) => Class=DIE (4.0/0.0)
+ => Class=LIVE (122.0/9.0)
+
+Number of Rules : 8
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         214               86.9919 %
+Incorrectly Classified Instances        32               13.0081 %
+Kappa statistic                          0.7398
+Mean absolute error                      0.2004
+Root mean squared error                  0.3426
+Relative absolute error                 40.0828 %
+Root relative squared error             68.5167 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.878    0.138    0.864      0.878    0.871      0.740    0.857     0.815     DIE
+                 0.862    0.122    0.876      0.862    0.869      0.740    0.857     0.810     LIVE
+Weighted Avg.    0.870    0.130    0.870      0.870    0.870      0.740    0.857     0.813     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 108  15 |   a = DIE
+  17 106 |   b = LIVE
+
