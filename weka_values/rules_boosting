@@ -1,0 +1,219 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R2-4,6-10,12-13,19
+Instances:    246
+Attributes:   9
+              AGE
+              FATIGUE
+              SPIDERS
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+JRIP rules:
+===========
+
+(SPIDERS = yes) and (PROTIME = 100) => Class=DIE (86.0/13.0)
+(PROTIME = 31) => Class=DIE (18.0/0.0)
+(SPIDERS = yes) and (SGOT = 19) => Class=DIE (11.0/1.0)
+(ALBUMIN = 3.8) and (BILIRUBIN = 0.4) => Class=DIE (7.0/0.0)
+(BILIRUBIN = 1.7) => Class=DIE (2.0/0.0)
+ => Class=LIVE (122.0/13.0)
+
+Number of Rules : 6
+
+
+Weight: 2.09
+
+JRIP rules:
+===========
+
+(FATIGUE = yes) => Class=DIE (203.68949771689614/87.80365296803656)
+(BILIRUBIN = 2) => Class=DIE (4.555555555555557/0.0)
+ => Class=LIVE (37.75494672754951/0.5616438356164386)
+
+Number of Rules : 3
+
+
+Weight: 0.58
+
+JRIP rules:
+===========
+
+(ALBUMIN = 3.3) and (SPIDERS = yes) => Class=DIE (13.244655581947713/0.0)
+(ALBUMIN = 2.6) => Class=DIE (11.004750593824198/0.0)
+(AGE = 42) and (FATIGUE = yes) => Class=DIE (8.375296912113988/0.0)
+(SGOT = 23) => Class=DIE (9.251781472684058/0.0)
+(FATIGUE = yes) and (SGOT = 28) => Class=DIE (10.033561133701012/0.781779661016952)
+(SGOT = 157) => Class=DIE (3.9928741092636466/0.0)
+(AGE = 31) => Class=DIE (7.842349732275837/1.658264221587021)
+ => Class=LIVE (182.25473046418983/33.45517633560119)
+
+Number of Rules : 8
+
+
+Weight: 1.77
+
+JRIP rules:
+===========
+
+(FATIGUE = no) => Class=LIVE (24.239879898005437/4.759837858799557)
+(PROTIME = 100) and (BILIRUBIN = 0.8) => Class=LIVE (8.79745674412583/0.0)
+(ALBUMIN = 4.1) => Class=LIVE (9.25512790422486/0.0)
+(PROTIME = 100) and (BILIRUBIN = 0.9) => Class=LIVE (5.085235112211461/0.0)
+ => Class=DIE (198.62230034143403/52.85385097619203)
+
+Number of Rules : 5
+
+
+Weight: 1.18
+
+JRIP rules:
+===========
+
+(SGOT = 55) => Class=DIE (12.13115591393116/1.144595830588523)
+(AGE = 47) => Class=DIE (10.709711543786797/0.16750941535466443)
+(PROTIME = 35) => Class=DIE (9.435786230655191/0.0)
+ => Class=LIVE (213.72334631162667/74.37148860763722)
+
+Number of Rules : 4
+
+
+Weight: 0.81
+
+JRIP rules:
+===========
+
+(ALBUMIN = 3.8) and (PROTIME = 100) => Class=LIVE (12.300930004974509/0.544468280100019)
+(PROTIME = 100) and (ALBUMIN = 3.9) => Class=LIVE (7.594880319007554/0.0)
+(AGE = 28) => Class=LIVE (7.961388587989922/0.0)
+ => Class=DIE (218.14280108802808/75.45754505925592)
+
+Number of Rules : 4
+
+
+Weight: 0.81
+
+JRIP rules:
+===========
+
+(SPIDERS = no) and (ALBUMIN = 3.8) => Class=DIE (21.10935407423023/3.85090130926161)
+(ALBUMIN = 2.4) => Class=DIE (10.504480391244021/0.0)
+(AGE = 62) => Class=DIE (10.493537816627594/1.141988200032307)
+(SPIDERS = yes) and (AGE = 30) => Class=DIE (10.518829627224362/1.2664837647853115)
+(SGOT = 20) => Class=DIE (29.988638271508602/11.937465939167648)
+(PROTIME = 35) => Class=DIE (4.930466970753322/0.0)
+(ALK_PHOSPHATE = 63) => Class=DIE (6.056138855553074/0.0)
+(SGOT = 23) => Class=DIE (4.77834668023293/0.0)
+(ALK_PHOSPHATE = 135) => Class=DIE (4.504804419700954/0.3492512401936866)
+(ALBUMIN = 3.3) => Class=DIE (4.151948544190697/0.7063352651536277)
+(ALBUMIN = 2.6) => Class=DIE (2.6699157989346216/0.0)
+ => Class=LIVE (136.29353854980081/13.66532188228257)
+
+Number of Rules : 12
+
+
+Weight: 1.87
+
+JRIP rules:
+===========
+
+(BILIRUBIN = 2.8) => Class=DIE (9.706131255289792/0.0)
+(ALBUMIN = 3.8) and (ALK_PHOSPHATE = 62) => Class=DIE (6.310894014174894/0.0)
+(SPIDERS = yes) and (ALK_PHOSPHATE = 65) => Class=DIE (9.535893624890651/0.0)
+(ALBUMIN = 2.2) => Class=DIE (7.966352785705662/0.0)
+(SPIDERS = yes) and (SGOT = 157) => Class=DIE (6.705794878516751/0.0)
+(ALBUMIN = 3.5) and (SGOT = 28) => Class=DIE (6.310894014174894/0.0)
+ => Class=LIVE (199.46403942724828/56.73954965367989)
+
+Number of Rules : 7
+
+
+Weight: 1.2
+
+JRIP rules:
+===========
+
+(SGOT = 20) and (AGE = 28) => Class=LIVE (10.05642291893379/0.0)
+(BILIRUBIN = 0.8) => Class=LIVE (11.840442892418013/0.0)
+(ALBUMIN = 4.2) and (SPIDERS = no) => Class=LIVE (6.431453342673511/0.0)
+(SGOT = 65) => Class=LIVE (4.331751896097047/0.0)
+(SPIDERS = no) and (PROTIME = 100) => Class=LIVE (38.68585685687356/15.581771677597745)
+(BILIRUBIN = 1) and (AGE = 60) => Class=LIVE (3.4749218507152135/0.0)
+(ALBUMIN = 3.7) => Class=LIVE (3.9033368734061304/0.0)
+(ALBUMIN = 3.9) => Class=LIVE (5.3304812804617/0.0)
+(ALBUMIN = 2.7) and (AGE = 36) => Class=LIVE (3.4749218507152135/0.0)
+(PROTIME = 63) => Class=LIVE (3.2016192863438455/0.0)
+(ALBUMIN = 4.1) => Class=LIVE (2.5919619572782158/0.0)
+ => Class=DIE (152.67682899408467/15.014970055911162)
+
+Number of Rules : 12
+
+
+Weight: 1.95
+
+JRIP rules:
+===========
+
+(ALBUMIN = 3.8) and (AGE = 48) => Class=LIVE (6.245342953587355/0.0)
+(ALBUMIN = 4.3) => Class=LIVE (8.373332260314184/0.0)
+(AGE = 28) => Class=LIVE (11.624705886344065/0.0)
+(BILIRUBIN = 0.8) => Class=LIVE (6.719213865967134/0.0)
+(ALBUMIN = 4.4) => Class=LIVE (4.894344601346747/0.0)
+(FATIGUE = no) => Class=LIVE (18.019234459249304/6.4641288491579765)
+(AGE = 54) => Class=LIVE (8.081628203639845/2.2154265596324882)
+(ALBUMIN = 2.9) => Class=LIVE (5.41136571029245/0.0)
+(BILIRUBIN = 1.3) => Class=LIVE (4.088592218789204/0.0)
+(ALBUMIN = 3.4) => Class=LIVE (6.7654656981662775/1.598734392269836)
+(ALK_PHOSPHATE = 175) => Class=LIVE (3.875692924267971/0.0)
+(AGE = 36) => Class=LIVE (3.706500604288661/0.0)
+(AGE = 51) => Class=LIVE (4.374260350291229/0.8238215237500951)
+(PROTIME = 54) => Class=LIVE (3.3987918749144552/0.0)
+(SGOT = 65) => Class=LIVE (2.473525644448531/0.0)
+(ALBUMIN = 3.7) => Class=LIVE (2.2288912400525223/0.0)
+ => Class=DIE (145.71911150404068/15.573990961736518)
+
+Number of Rules : 17
+
+
+Weight: 2.11
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         209               84.9593 %
+Incorrectly Classified Instances        37               15.0407 %
+Kappa statistic                          0.6992
+Mean absolute error                      0.1528
+Root mean squared error                  0.3461
+Relative absolute error                 30.5534 %
+Root relative squared error             69.2205 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.870    0.171    0.836      0.870    0.853      0.700    0.927     0.929     DIE
+                 0.829    0.130    0.864      0.829    0.846      0.700    0.927     0.910     LIVE
+Weighted Avg.    0.850    0.150    0.850      0.850    0.850      0.700    0.927     0.919     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 107  16 |   a = DIE
+  21 102 |   b = LIVE
+
