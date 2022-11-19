@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.LBR 
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R2-4,6-10,12-13,19
+Instances:    246
+Attributes:   9
+              AGE
+              FATIGUE
+              SPIDERS
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+=== LBR Run information ===
+
+Scheme:       weka.classifiers.LBR
+Relation:     Class
+Instances:    246
+Attributes:   9
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         228               92.6829 %
+Incorrectly Classified Instances        18                7.3171 %
+Kappa statistic                          0.8537
+Mean absolute error                      0.1091
+Root mean squared error                  0.2517
+Relative absolute error                 21.8263 %
+Root relative squared error             50.3414 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.951    0.098    0.907      0.951    0.929      0.855    0.969     0.975     DIE
+                 0.902    0.049    0.949      0.902    0.925      0.855    0.969     0.960     LIVE
+Weighted Avg.    0.927    0.073    0.928      0.927    0.927      0.855    0.969     0.967     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 117   6 |   a = DIE
+  12 111 |   b = LIVE
+
