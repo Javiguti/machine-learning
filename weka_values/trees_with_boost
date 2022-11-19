@@ -1,0 +1,848 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1
+Instances:    246
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+FATIGUE = no: LIVE (54.0/2.0)
+FATIGUE = yes
+|   SPIDERS = no: LIVE (70.0/24.0)
+|   SPIDERS = yes: DIE (122.0/25.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Weight: 1.34
+
+J48 pruned tree
+------------------
+
+MALAISE = no: LIVE (92.02/22.37)
+MALAISE = yes
+|   ANTIVIRALS = no: DIE (142.96/44.49)
+|   ANTIVIRALS = yes: LIVE (11.02/3.04)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Weight: 0.92
+
+J48 pruned tree
+------------------
+
+ALK_PHOSPHATE = 26: LIVE (0.44)
+ALK_PHOSPHATE = 30: LIVE (0.44)
+ALK_PHOSPHATE = 34: LIVE (0.44)
+ALK_PHOSPHATE = 40: LIVE (0.44)
+ALK_PHOSPHATE = 44: LIVE (1.11)
+ALK_PHOSPHATE = 45: LIVE (0.44)
+ALK_PHOSPHATE = 46: LIVE (0.88)
+ALK_PHOSPHATE = 48: LIVE (0.44)
+ALK_PHOSPHATE = 50: LIVE (0.44)
+ALK_PHOSPHATE = 52: LIVE (0.44)
+ALK_PHOSPHATE = 53: LIVE (0.44)
+ALK_PHOSPHATE = 55: LIVE (0.44)
+ALK_PHOSPHATE = 56: LIVE (0.44)
+ALK_PHOSPHATE = 57: LIVE (0.44)
+ALK_PHOSPHATE = 58: LIVE (0.44)
+ALK_PHOSPHATE = 59: LIVE (1.68)
+ALK_PHOSPHATE = 60: LIVE (0.44)
+ALK_PHOSPHATE = 62: DIE (7.49/1.32)
+ALK_PHOSPHATE = 63: DIE (15.76)
+ALK_PHOSPHATE = 65: DIE (15.75)
+ALK_PHOSPHATE = 67: DIE (3.33)
+ALK_PHOSPHATE = 68: LIVE (1.11)
+ALK_PHOSPHATE = 70: LIVE (4.68)
+ALK_PHOSPHATE = 71: LIVE (0.44)
+ALK_PHOSPHATE = 72: LIVE (2.79)
+ALK_PHOSPHATE = 74: LIVE (1.11)
+ALK_PHOSPHATE = 75: LIVE (5.12)
+ALK_PHOSPHATE = 76: LIVE (2.22)
+ALK_PHOSPHATE = 78: LIVE (1.32)
+ALK_PHOSPHATE = 80: LIVE (0.88)
+ALK_PHOSPHATE = 81: LIVE (3.01)
+ALK_PHOSPHATE = 82: DIE (7.26/0.44)
+ALK_PHOSPHATE = 84: DIE (6.46)
+ALK_PHOSPHATE = 85
+|   LIVER_FIRM = no
+|   |   SPIDERS = no: LIVE (17.94/3.37)
+|   |   SPIDERS = yes: DIE (26.88/5.93)
+|   LIVER_FIRM = yes: LIVE (9.69/1.32)
+ALK_PHOSPHATE = 86: DIE (9.38)
+ALK_PHOSPHATE = 89: LIVE (0.44)
+ALK_PHOSPHATE = 90: DIE (0.44)
+ALK_PHOSPHATE = 92: LIVE (1.11)
+ALK_PHOSPHATE = 95: LIVE (1.55)
+ALK_PHOSPHATE = 96: LIVE (0.44)
+ALK_PHOSPHATE = 100: DIE (1.99/0.88)
+ALK_PHOSPHATE = 102: LIVE (0.88)
+ALK_PHOSPHATE = 103: LIVE (1.11)
+ALK_PHOSPHATE = 107: DIE (0.44)
+ALK_PHOSPHATE = 109: DIE (1.68)
+ALK_PHOSPHATE = 110: LIVE (0.44)
+ALK_PHOSPHATE = 114: LIVE (4.24)
+ALK_PHOSPHATE = 115: LIVE (0.44)
+ALK_PHOSPHATE = 118: DIE (0.44)
+ALK_PHOSPHATE = 119: LIVE (0.44)
+ALK_PHOSPHATE = 120: DIE (2.13/0.44)
+ALK_PHOSPHATE = 123: DIE (0.44)
+ALK_PHOSPHATE = 125: LIVE (1.68)
+ALK_PHOSPHATE = 126: LIVE (0.44)
+ALK_PHOSPHATE = 127: DIE (0.44)
+ALK_PHOSPHATE = 130: LIVE (0.44)
+ALK_PHOSPHATE = 133: LIVE (4.24)
+ALK_PHOSPHATE = 135: DIE (2.57/0.88)
+ALK_PHOSPHATE = 138: DIE (1.11)
+ALK_PHOSPHATE = 139: LIVE (0.44)
+ALK_PHOSPHATE = 141: LIVE (4.68)
+ALK_PHOSPHATE = 147: LIVE (4.24)
+ALK_PHOSPHATE = 150: LIVE (4.24)
+ALK_PHOSPHATE = 155: DIE (4.68/0.44)
+ALK_PHOSPHATE = 158: LIVE (4.24)
+ALK_PHOSPHATE = 160: LIVE (4.24)
+ALK_PHOSPHATE = 164: LIVE (0.44)
+ALK_PHOSPHATE = 165: DIE (0.44)
+ALK_PHOSPHATE = 166: DIE (0.44)
+ALK_PHOSPHATE = 167: DIE (1.11)
+ALK_PHOSPHATE = 168: LIVE (0.44)
+ALK_PHOSPHATE = 175: LIVE (1.68)
+ALK_PHOSPHATE = 179: LIVE (1.11)
+ALK_PHOSPHATE = 180: LIVE (4.24)
+ALK_PHOSPHATE = 181: LIVE (1.68)
+ALK_PHOSPHATE = 191: LIVE (1.11)
+ALK_PHOSPHATE = 194: LIVE (1.11)
+ALK_PHOSPHATE = 215: LIVE (8.49)
+ALK_PHOSPHATE = 230: LIVE (1.68)
+ALK_PHOSPHATE = 243: DIE (4.24)
+ALK_PHOSPHATE = 256: LIVE (0.44)
+ALK_PHOSPHATE = 280: DIE (4.24)
+ALK_PHOSPHATE = 295: LIVE (4.24)
+
+Number of Leaves  : 	85
+
+Size of the tree : 	88
+
+
+Weight: 2.73
+
+J48 pruned tree
+------------------
+
+ANOREXIA = no
+|   LIVER_BIG = no: LIVE (23.93/6.74)
+|   LIVER_BIG = yes
+|   |   MALAISE = no: LIVE (73.95/13.87)
+|   |   MALAISE = yes: DIE (67.98/11.98)
+ANOREXIA = yes: LIVE (80.14/19.74)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Weight: 1.31
+
+J48 pruned tree
+------------------
+
+SGOT = 14: LIVE (0.52)
+SGOT = 15: LIVE (0.15)
+SGOT = 16: DIE (9.36/0.15)
+SGOT = 18: LIVE (0.82)
+SGOT = 19: DIE (3.3/0.57)
+SGOT = 20
+|   AGE = 7: LIVE (0.0)
+|   AGE = 20: LIVE (0.0)
+|   AGE = 22: LIVE (0.15)
+|   AGE = 23: LIVE (0.15)
+|   AGE = 24: LIVE (0.0)
+|   AGE = 25: LIVE (0.0)
+|   AGE = 26: LIVE (0.0)
+|   AGE = 27: LIVE (0.0)
+|   AGE = 28: LIVE (22.06)
+|   AGE = 30: LIVE (0.0)
+|   AGE = 31: LIVE (0.15)
+|   AGE = 32: LIVE (0.0)
+|   AGE = 33: LIVE (0.0)
+|   AGE = 34: DIE (2.93/0.15)
+|   AGE = 35: LIVE (0.0)
+|   AGE = 36: LIVE (0.0)
+|   AGE = 37: DIE (1.19)
+|   AGE = 38: LIVE (0.0)
+|   AGE = 39: LIVE (0.15)
+|   AGE = 40: LIVE (0.0)
+|   AGE = 41: LIVE (0.0)
+|   AGE = 42: DIE (1.19)
+|   AGE = 43: LIVE (0.0)
+|   AGE = 44: LIVE (0.0)
+|   AGE = 45: LIVE (0.0)
+|   AGE = 46: LIVE (0.0)
+|   AGE = 47: DIE (2.28)
+|   AGE = 48: LIVE (0.0)
+|   AGE = 49: LIVE (0.0)
+|   AGE = 50: LIVE (0.0)
+|   AGE = 51: DIE (1.96/0.57)
+|   AGE = 52: LIVE (0.0)
+|   AGE = 53: LIVE (0.0)
+|   AGE = 54: LIVE (0.0)
+|   AGE = 56: LIVE (0.0)
+|   AGE = 57: DIE (1.65)
+|   AGE = 58: LIVE (0.0)
+|   AGE = 59: LIVE (0.0)
+|   AGE = 60: LIVE (0.0)
+|   AGE = 61: LIVE (1.58/0.15)
+|   AGE = 62: LIVE (0.0)
+|   AGE = 64: LIVE (0.0)
+|   AGE = 65: LIVE (0.0)
+|   AGE = 66: LIVE (0.0)
+|   AGE = 67: LIVE (0.0)
+|   AGE = 69: LIVE (0.0)
+|   AGE = 70: LIVE (0.0)
+|   AGE = 72: LIVE (0.0)
+|   AGE = 78: LIVE (0.0)
+SGOT = 23: DIE (23.38)
+SGOT = 24: LIVE (1.73)
+SGOT = 25: LIVE (0.3)
+SGOT = 28: DIE (12.15/0.45)
+SGOT = 29: LIVE (2.29)
+SGOT = 30: LIVE (2.89/0.15)
+SGOT = 31: LIVE (2.59)
+SGOT = 32: LIVE (0.15)
+SGOT = 33: LIVE (2.44)
+SGOT = 34: LIVE (0.3)
+SGOT = 38: LIVE (0.45)
+SGOT = 39: LIVE (2.29)
+SGOT = 40: LIVE (0.72)
+SGOT = 42: LIVE (2.44)
+SGOT = 43: LIVE (1.39)
+SGOT = 44: LIVE (0.45)
+SGOT = 45: LIVE (0.93)
+SGOT = 46: LIVE (1.96)
+SGOT = 48: DIE (2.92/0.72)
+SGOT = 49: DIE (7.02)
+SGOT = 52: LIVE (0.3)
+SGOT = 53: LIVE (5.61)
+SGOT = 54: LIVE (1.44)
+SGOT = 55: DIE (5.75/0.72)
+SGOT = 58: DIE (2.09/0.7)
+SGOT = 59: LIVE (0.38)
+SGOT = 60: DIE (10.79/2.03)
+SGOT = 63: LIVE (0.15)
+SGOT = 64: DIE (0.7/0.15)
+SGOT = 65: LIVE (2.15)
+SGOT = 68: LIVE (3.2/0.38)
+SGOT = 69: LIVE (1.69)
+SGOT = 70: DIE (0.15)
+SGOT = 75: DIE (7.0/1.69)
+SGOT = 78: LIVE (0.15)
+SGOT = 80: DIE (0.72/0.15)
+SGOT = 81: LIVE (0.15)
+SGOT = 86: LIVE (0.15)
+SGOT = 89: LIVE (0.38)
+SGOT = 90: LIVE (0.15)
+SGOT = 92: LIVE (1.54)
+SGOT = 98: DIE (2.87/1.44)
+SGOT = 100: LIVE (2.29)
+SGOT = 101: DIE (32.42)
+SGOT = 110: LIVE (1.39)
+SGOT = 114: DIE (0.55)
+SGOT = 117: LIVE (0.57)
+SGOT = 118: LIVE (1.44)
+SGOT = 120: DIE (1.54/0.15)
+SGOT = 123: LIVE (0.38)
+SGOT = 128: LIVE (5.31)
+SGOT = 136: LIVE (0.15)
+SGOT = 140: LIVE (0.15)
+SGOT = 142: LIVE (0.15)
+SGOT = 144: LIVE (0.15)
+SGOT = 145: LIVE (0.15)
+SGOT = 150: LIVE (0.38)
+SGOT = 152: LIVE (0.15)
+SGOT = 153: DIE (0.55)
+SGOT = 156: LIVE (5.31)
+SGOT = 157: DIE (0.3)
+SGOT = 166: LIVE (2.29)
+SGOT = 173: LIVE (0.15)
+SGOT = 181: LIVE (0.57)
+SGOT = 182: DIE (0.55)
+SGOT = 200: LIVE (0.15)
+SGOT = 224: LIVE (2.29)
+SGOT = 225: LIVE (2.29)
+SGOT = 227: LIVE (0.15)
+SGOT = 231: LIVE (8.76)
+SGOT = 242: DIE (1.94)
+SGOT = 249: LIVE (0.57)
+SGOT = 269: LIVE (1.44)
+SGOT = 271: LIVE (0.38)
+SGOT = 278: LIVE (1.44)
+SGOT = 420: LIVE (1.39)
+SGOT = 528: DIE (2.11)
+SGOT = 648: LIVE (0.38)
+
+Number of Leaves  : 	132
+
+Size of the tree : 	134
+
+
+Weight: 3.13
+
+J48 pruned tree
+------------------
+
+ALBUMIN = 2.1: DIE (1.19)
+ALBUMIN = 2.2: DIE (17.78)
+ALBUMIN = 2.4: DIE (3.06)
+ALBUMIN = 2.6: DIE (7.97)
+ALBUMIN = 2.7: LIVE (24.26/0.31)
+ALBUMIN = 2.8: DIE (1.91)
+ALBUMIN = 2.9: LIVE (4.52)
+ALBUMIN = 3: LIVE (8.45/0.3)
+ALBUMIN = 3.1: LIVE (1.53/0.73)
+ALBUMIN = 3.3
+|   SPIDERS = no: LIVE (2.5)
+|   SPIDERS = yes: DIE (3.57)
+ALBUMIN = 3.4: LIVE (1.85/0.73)
+ALBUMIN = 3.5: LIVE (4.48/1.73)
+ALBUMIN = 3.6: LIVE (1.27/0.08)
+ALBUMIN = 3.7: LIVE (7.83)
+ALBUMIN = 3.8: DIE (17.55/6.31)
+ALBUMIN = 3.9: LIVE (10.76)
+ALBUMIN = 4
+|   LIVER_BIG = no: DIE (6.75/0.38)
+|   LIVER_BIG = yes: LIVE (61.07/13.11)
+ALBUMIN = 4.1: LIVE (26.09)
+ALBUMIN = 4.2
+|   SPIDERS = no: LIVE (3.6)
+|   SPIDERS = yes: DIE (5.97/0.3)
+ALBUMIN = 4.3: LIVE (6.15)
+ALBUMIN = 4.4: LIVE (3.51)
+ALBUMIN = 4.5: LIVE (2.23)
+ALBUMIN = 4.6: LIVE (8.37)
+ALBUMIN = 4.7: LIVE (0.08)
+ALBUMIN = 4.8: LIVE (0.2)
+ALBUMIN = 4.9: LIVE (0.16)
+ALBUMIN = 5: LIVE (0.08)
+ALBUMIN = 5.3: LIVE (1.2)
+ALBUMIN = 6.4: LIVE (0.08)
+
+Number of Leaves  : 	32
+
+Size of the tree : 	36
+
+
+Weight: 2.23
+
+J48 pruned tree
+------------------
+
+ALK_PHOSPHATE = 26: LIVE (0.99)
+ALK_PHOSPHATE = 30: LIVE (0.04)
+ALK_PHOSPHATE = 34: LIVE (0.04)
+ALK_PHOSPHATE = 40: LIVE (0.04)
+ALK_PHOSPHATE = 44: LIVE (0.11)
+ALK_PHOSPHATE = 45: LIVE (0.04)
+ALK_PHOSPHATE = 46: LIVE (0.09)
+ALK_PHOSPHATE = 48: LIVE (0.04)
+ALK_PHOSPHATE = 50: LIVE (0.04)
+ALK_PHOSPHATE = 52: LIVE (0.04)
+ALK_PHOSPHATE = 53: LIVE (0.04)
+ALK_PHOSPHATE = 55: LIVE (0.16)
+ALK_PHOSPHATE = 56: LIVE (0.99)
+ALK_PHOSPHATE = 57: LIVE (0.04)
+ALK_PHOSPHATE = 58: LIVE (0.04)
+ALK_PHOSPHATE = 59: LIVE (0.16)
+ALK_PHOSPHATE = 60: LIVE (0.04)
+ALK_PHOSPHATE = 62
+|   ANTIVIRALS = no: LIVE (2.48/0.49)
+|   ANTIVIRALS = yes: DIE (2.48)
+ALK_PHOSPHATE = 63: DIE (9.13)
+ALK_PHOSPHATE = 65: DIE (18.64)
+ALK_PHOSPHATE = 67: DIE (1.2)
+ALK_PHOSPHATE = 68: LIVE (0.4)
+ALK_PHOSPHATE = 70: LIVE (1.4)
+ALK_PHOSPHATE = 71: LIVE (0.04)
+ALK_PHOSPHATE = 72: LIVE (0.27)
+ALK_PHOSPHATE = 74: LIVE (0.4)
+ALK_PHOSPHATE = 75: LIVE (1.44)
+ALK_PHOSPHATE = 76: LIVE (0.22)
+ALK_PHOSPHATE = 78: LIVE (4.09)
+ALK_PHOSPHATE = 80: LIVE (9.18)
+ALK_PHOSPHATE = 81: LIVE (4.84)
+ALK_PHOSPHATE = 82: DIE (1.33/0.66)
+ALK_PHOSPHATE = 84: DIE (2.34)
+ALK_PHOSPHATE = 85
+|   STEROID = no
+|   |   SEX = male: LIVE (9.59)
+|   |   SEX = female
+|   |   |   ANTIVIRALS = no
+|   |   |   |   MALAISE = no
+|   |   |   |   |   HISTOLOGY = no
+|   |   |   |   |   |   SPIDERS = no: LIVE (2.06)
+|   |   |   |   |   |   SPIDERS = yes: DIE (11.17)
+|   |   |   |   |   HISTOLOGY = yes: LIVE (4.19)
+|   |   |   |   MALAISE = yes: DIE (57.77/0.62)
+|   |   |   ANTIVIRALS = yes: LIVE (4.76)
+|   STEROID = yes: LIVE (25.38/1.43)
+ALK_PHOSPHATE = 86: DIE (0.92)
+ALK_PHOSPHATE = 89: LIVE (0.04)
+ALK_PHOSPHATE = 90: DIE (0.16)
+ALK_PHOSPHATE = 92: LIVE (0.11)
+ALK_PHOSPHATE = 95: LIVE (4.71)
+ALK_PHOSPHATE = 96: LIVE (0.04)
+ALK_PHOSPHATE = 100: DIE (5.05/1.32)
+ALK_PHOSPHATE = 102: LIVE (1.03)
+ALK_PHOSPHATE = 103: LIVE (0.4)
+ALK_PHOSPHATE = 107: DIE (0.4)
+ALK_PHOSPHATE = 109: DIE (0.61)
+ALK_PHOSPHATE = 110: LIVE (0.04)
+ALK_PHOSPHATE = 114: LIVE (0.41)
+ALK_PHOSPHATE = 115: LIVE (0.04)
+ALK_PHOSPHATE = 118: DIE (0.16)
+ALK_PHOSPHATE = 119: LIVE (0.04)
+ALK_PHOSPHATE = 120: DIE (2.19/0.66)
+ALK_PHOSPHATE = 123: DIE (0.4)
+ALK_PHOSPHATE = 125: LIVE (1.53)
+ALK_PHOSPHATE = 126: LIVE (0.04)
+ALK_PHOSPHATE = 127: DIE (0.16)
+ALK_PHOSPHATE = 130: LIVE (0.04)
+ALK_PHOSPHATE = 133: LIVE (9.5)
+ALK_PHOSPHATE = 135
+|   SEX = male: LIVE (6.14)
+|   SEX = female: DIE (2.19/0.66)
+ALK_PHOSPHATE = 138: DIE (0.4)
+ALK_PHOSPHATE = 139: LIVE (0.04)
+ALK_PHOSPHATE = 141: LIVE (2.52)
+ALK_PHOSPHATE = 147: LIVE (1.54)
+ALK_PHOSPHATE = 150: LIVE (0.41)
+ALK_PHOSPHATE = 155: DIE (2.2/0.66)
+ALK_PHOSPHATE = 158: LIVE (3.85)
+ALK_PHOSPHATE = 160: LIVE (0.41)
+ALK_PHOSPHATE = 164: LIVE (0.04)
+ALK_PHOSPHATE = 165: DIE (0.16)
+ALK_PHOSPHATE = 166: DIE (0.99)
+ALK_PHOSPHATE = 167: DIE (0.4)
+ALK_PHOSPHATE = 168: LIVE (0.04)
+ALK_PHOSPHATE = 175: LIVE (3.77)
+ALK_PHOSPHATE = 179: LIVE (0.4)
+ALK_PHOSPHATE = 180: LIVE (1.54)
+ALK_PHOSPHATE = 181: LIVE (0.16)
+ALK_PHOSPHATE = 191: LIVE (0.4)
+ALK_PHOSPHATE = 194: LIVE (0.11)
+ALK_PHOSPHATE = 215: LIVE (0.83)
+ALK_PHOSPHATE = 230: LIVE (0.16)
+ALK_PHOSPHATE = 243: DIE (1.54)
+ALK_PHOSPHATE = 256: LIVE (0.04)
+ALK_PHOSPHATE = 280: DIE (0.41)
+ALK_PHOSPHATE = 295: LIVE (9.5)
+
+Number of Leaves  : 	91
+
+Size of the tree : 	100
+
+
+Weight: 3.6
+
+J48 pruned tree
+------------------
+
+FATIGUE = no: LIVE (79.5/1.58)
+FATIGUE = yes
+|   LIVER_BIG = no: LIVE (31.57/2.43)
+|   LIVER_BIG = yes
+|   |   PROTIME = 0: DIE (0.0)
+|   |   PROTIME = 21: DIE (0.0)
+|   |   PROTIME = 23: LIVE (0.21)
+|   |   PROTIME = 29: DIE (10.81/0.21)
+|   |   PROTIME = 30: DIE (0.96)
+|   |   PROTIME = 31: DIE (5.04)
+|   |   PROTIME = 32: DIE (0.79)
+|   |   PROTIME = 35: DIE (0.58)
+|   |   PROTIME = 36: LIVE (1.94)
+|   |   PROTIME = 38: DIE (0.21)
+|   |   PROTIME = 39: DIE (0.0)
+|   |   PROTIME = 40: DIE (0.21)
+|   |   PROTIME = 41: DIE (0.78)
+|   |   PROTIME = 42: DIE (1.91)
+|   |   PROTIME = 43: DIE (0.78)
+|   |   PROTIME = 46: LIVE (0.4/0.08)
+|   |   PROTIME = 47: DIE (0.0)
+|   |   PROTIME = 48: LIVE (1.94)
+|   |   PROTIME = 50: DIE (3.03/0.02)
+|   |   PROTIME = 51: LIVE (0.21)
+|   |   PROTIME = 52: LIVE (2.38)
+|   |   PROTIME = 54: LIVE (0.13)
+|   |   PROTIME = 56: LIVE (0.08)
+|   |   PROTIME = 57: LIVE (2.05)
+|   |   PROTIME = 58: LIVE (0.79)
+|   |   PROTIME = 60: DIE (0.0)
+|   |   PROTIME = 62: DIE (0.0)
+|   |   PROTIME = 63: LIVE (2.28)
+|   |   PROTIME = 64: LIVE (0.02)
+|   |   PROTIME = 66: LIVE (7.8)
+|   |   PROTIME = 67: DIE (0.0)
+|   |   PROTIME = 70: DIE (0.0)
+|   |   PROTIME = 72: DIE (0.0)
+|   |   PROTIME = 73: DIE (3.03/0.02)
+|   |   PROTIME = 74: LIVE (0.83)
+|   |   PROTIME = 75: DIE (0.0)
+|   |   PROTIME = 76: DIE (0.0)
+|   |   PROTIME = 77: LIVE (0.78)
+|   |   PROTIME = 78: LIVE (0.02)
+|   |   PROTIME = 80: DIE (0.0)
+|   |   PROTIME = 84: DIE (0.0)
+|   |   PROTIME = 85: DIE (0.0)
+|   |   PROTIME = 90: LIVE (0.06)
+|   |   PROTIME = 100
+|   |   |   SEX = male: LIVE (4.95)
+|   |   |   SEX = female
+|   |   |   |   ALK_PHOSPHATE = 26: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 30: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 34: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 40: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 44: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 45: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 46: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 48: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 50: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 52: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 53: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 55: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 56: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 57: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 58: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 59: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 60: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 62: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 63: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 65: DIE (8.33)
+|   |   |   |   ALK_PHOSPHATE = 67: DIE (0.21)
+|   |   |   |   ALK_PHOSPHATE = 68: LIVE (0.21)
+|   |   |   |   ALK_PHOSPHATE = 70: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 71: LIVE (0.02)
+|   |   |   |   ALK_PHOSPHATE = 72: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 74: LIVE (0.21)
+|   |   |   |   ALK_PHOSPHATE = 75: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 76: LIVE (0.06)
+|   |   |   |   ALK_PHOSPHATE = 78: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 80: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 81: LIVE (0.02)
+|   |   |   |   ALK_PHOSPHATE = 82: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 84: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 85: DIE (65.57/9.69)
+|   |   |   |   ALK_PHOSPHATE = 86: DIE (0.13)
+|   |   |   |   ALK_PHOSPHATE = 89: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 90: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 92: LIVE (0.06)
+|   |   |   |   ALK_PHOSPHATE = 95: LIVE (1.91)
+|   |   |   |   ALK_PHOSPHATE = 96: LIVE (0.02)
+|   |   |   |   ALK_PHOSPHATE = 100: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 102: LIVE (0.02)
+|   |   |   |   ALK_PHOSPHATE = 103: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 107: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 109: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 110: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 114: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 115: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 118: DIE (0.08)
+|   |   |   |   ALK_PHOSPHATE = 119: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 120: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 123: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 125: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 126: LIVE (0.02)
+|   |   |   |   ALK_PHOSPHATE = 127: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 130: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 133: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 135: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 138: DIE (0.21)
+|   |   |   |   ALK_PHOSPHATE = 139: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 141: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 147: LIVE (0.79)
+|   |   |   |   ALK_PHOSPHATE = 150: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 155: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 158: LIVE (1.98)
+|   |   |   |   ALK_PHOSPHATE = 160: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 164: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 165: DIE (0.08)
+|   |   |   |   ALK_PHOSPHATE = 166: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 167: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 168: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 175: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 179: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 180: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 181: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 191: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 194: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 215: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 230: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 243: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 256: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 280: DIE (0.0)
+|   |   |   |   ALK_PHOSPHATE = 295: DIE (0.0)
+
+Number of Leaves  : 	129
+
+Size of the tree : 	134
+
+
+Weight: 2.8
+
+J48 pruned tree
+------------------
+
+AGE = 7: LIVE (0.01)
+AGE = 20: LIVE (0.24)
+AGE = 22: LIVE (0.02)
+AGE = 23: LIVE (0.8)
+AGE = 24: LIVE (6.82)
+AGE = 25: LIVE (0.07)
+AGE = 26: LIVE (1.67)
+AGE = 27: LIVE (3.62)
+AGE = 28: LIVE (28.94)
+AGE = 30: DIE (15.69/7.45)
+AGE = 31: DIE (3.93/0.04)
+AGE = 32: LIVE (2.22)
+AGE = 33: DIE (7.35/0.28)
+AGE = 34
+|   SPIDERS = no: LIVE (4.74)
+|   SPIDERS = yes: DIE (20.97/0.16)
+AGE = 35: LIVE (0.3/0.11)
+AGE = 36: LIVE (10.77)
+AGE = 37: LIVE (15.48/1.31)
+AGE = 38: DIE (7.72/0.77)
+AGE = 39: LIVE (4.85/0.11)
+AGE = 40: LIVE (0.39)
+AGE = 41: DIE (1.29/0.28)
+AGE = 42: DIE (1.95/0.04)
+AGE = 43: DIE (1.05)
+AGE = 44: DIE (0.66/0.25)
+AGE = 45: LIVE (22.05/1.59)
+AGE = 46: DIE (1.59)
+AGE = 47: DIE (8.97/0.27)
+AGE = 48: LIVE (1.16/0.11)
+AGE = 49: LIVE (17.17/0.11)
+AGE = 50: LIVE (13.99/0.42)
+AGE = 51: LIVE (3.19/1.01)
+AGE = 52: LIVE (0.47)
+AGE = 53: LIVE (1.03)
+AGE = 54: LIVE (13.56/0.42)
+AGE = 56: DIE (0.91/0.19)
+AGE = 57: DIE (6.56)
+AGE = 58: DIE (2.83/1.03)
+AGE = 59: DIE (0.11)
+AGE = 60: LIVE (0.42)
+AGE = 61: DIE (2.71/0.22)
+AGE = 62: DIE (6.81/0.42)
+AGE = 64: LIVE (0.01)
+AGE = 65: LIVE (0.42)
+AGE = 66: LIVE (0.01)
+AGE = 67: LIVE (0.11)
+AGE = 69: LIVE (0.01)
+AGE = 70: DIE (0.17)
+AGE = 72: LIVE (0.19)
+AGE = 78: LIVE (0.01)
+
+Number of Leaves  : 	50
+
+Size of the tree : 	52
+
+
+Weight: 2.63
+
+J48 pruned tree
+------------------
+
+BILIRUBIN = 0.3: LIVE (0.22)
+BILIRUBIN = 0.4: DIE (9.34/0.01)
+BILIRUBIN = 0.5: LIVE (1.61/0.71)
+BILIRUBIN = 0.6: LIVE (16.84/2.44)
+BILIRUBIN = 0.7: LIVE (61.26/1.33)
+BILIRUBIN = 0.8: LIVE (8.39)
+BILIRUBIN = 0.9: LIVE (12.49/0.22)
+BILIRUBIN = 1
+|   STEROID = no
+|   |   FATIGUE = no: LIVE (6.44)
+|   |   FATIGUE = yes
+|   |   |   SPIDERS = no
+|   |   |   |   SGOT = 14: LIVE (0.0)
+|   |   |   |   SGOT = 15: LIVE (0.0)
+|   |   |   |   SGOT = 16: LIVE (0.0)
+|   |   |   |   SGOT = 18: LIVE (0.0)
+|   |   |   |   SGOT = 19: LIVE (0.0)
+|   |   |   |   SGOT = 20: LIVE (2.38)
+|   |   |   |   SGOT = 23: LIVE (0.0)
+|   |   |   |   SGOT = 24: LIVE (0.0)
+|   |   |   |   SGOT = 25: LIVE (0.0)
+|   |   |   |   SGOT = 28: LIVE (0.0)
+|   |   |   |   SGOT = 29: LIVE (0.0)
+|   |   |   |   SGOT = 30: LIVE (0.1)
+|   |   |   |   SGOT = 31: LIVE (0.0)
+|   |   |   |   SGOT = 32: LIVE (0.0)
+|   |   |   |   SGOT = 33: LIVE (0.0)
+|   |   |   |   SGOT = 34: LIVE (0.1)
+|   |   |   |   SGOT = 38: LIVE (0.0)
+|   |   |   |   SGOT = 39: LIVE (0.0)
+|   |   |   |   SGOT = 40: LIVE (0.0)
+|   |   |   |   SGOT = 42: LIVE (0.0)
+|   |   |   |   SGOT = 43: LIVE (0.0)
+|   |   |   |   SGOT = 44: LIVE (0.0)
+|   |   |   |   SGOT = 45: LIVE (0.61)
+|   |   |   |   SGOT = 46: LIVE (0.0)
+|   |   |   |   SGOT = 48: LIVE (0.0)
+|   |   |   |   SGOT = 49: LIVE (0.0)
+|   |   |   |   SGOT = 52: LIVE (0.0)
+|   |   |   |   SGOT = 53: LIVE (0.0)
+|   |   |   |   SGOT = 54: LIVE (0.0)
+|   |   |   |   SGOT = 55: LIVE (0.0)
+|   |   |   |   SGOT = 58: LIVE (0.53)
+|   |   |   |   SGOT = 59: LIVE (0.0)
+|   |   |   |   SGOT = 60: DIE (3.43)
+|   |   |   |   SGOT = 63: LIVE (0.0)
+|   |   |   |   SGOT = 64: LIVE (0.0)
+|   |   |   |   SGOT = 65: LIVE (0.0)
+|   |   |   |   SGOT = 68: LIVE (0.0)
+|   |   |   |   SGOT = 69: LIVE (0.0)
+|   |   |   |   SGOT = 70: LIVE (0.0)
+|   |   |   |   SGOT = 75: LIVE (1.34)
+|   |   |   |   SGOT = 78: LIVE (0.0)
+|   |   |   |   SGOT = 80: LIVE (0.0)
+|   |   |   |   SGOT = 81: LIVE (0.0)
+|   |   |   |   SGOT = 86: LIVE (0.0)
+|   |   |   |   SGOT = 89: LIVE (0.0)
+|   |   |   |   SGOT = 90: LIVE (0.0)
+|   |   |   |   SGOT = 92: LIVE (0.0)
+|   |   |   |   SGOT = 98: LIVE (0.0)
+|   |   |   |   SGOT = 100: LIVE (0.0)
+|   |   |   |   SGOT = 101: LIVE (0.0)
+|   |   |   |   SGOT = 110: LIVE (0.0)
+|   |   |   |   SGOT = 114: LIVE (0.0)
+|   |   |   |   SGOT = 117: LIVE (0.0)
+|   |   |   |   SGOT = 118: LIVE (0.0)
+|   |   |   |   SGOT = 120: LIVE (0.0)
+|   |   |   |   SGOT = 123: LIVE (0.0)
+|   |   |   |   SGOT = 128: LIVE (0.0)
+|   |   |   |   SGOT = 136: LIVE (0.0)
+|   |   |   |   SGOT = 140: LIVE (0.0)
+|   |   |   |   SGOT = 142: LIVE (0.0)
+|   |   |   |   SGOT = 144: LIVE (0.0)
+|   |   |   |   SGOT = 145: LIVE (0.0)
+|   |   |   |   SGOT = 150: LIVE (0.0)
+|   |   |   |   SGOT = 152: LIVE (0.0)
+|   |   |   |   SGOT = 153: LIVE (0.0)
+|   |   |   |   SGOT = 156: LIVE (0.0)
+|   |   |   |   SGOT = 157: LIVE (0.0)
+|   |   |   |   SGOT = 166: LIVE (0.0)
+|   |   |   |   SGOT = 173: LIVE (0.0)
+|   |   |   |   SGOT = 181: LIVE (0.0)
+|   |   |   |   SGOT = 182: LIVE (0.0)
+|   |   |   |   SGOT = 200: LIVE (0.0)
+|   |   |   |   SGOT = 224: LIVE (0.0)
+|   |   |   |   SGOT = 225: LIVE (0.0)
+|   |   |   |   SGOT = 227: LIVE (0.0)
+|   |   |   |   SGOT = 231: LIVE (0.0)
+|   |   |   |   SGOT = 242: LIVE (0.0)
+|   |   |   |   SGOT = 249: LIVE (0.0)
+|   |   |   |   SGOT = 269: LIVE (0.0)
+|   |   |   |   SGOT = 271: LIVE (0.0)
+|   |   |   |   SGOT = 278: LIVE (0.0)
+|   |   |   |   SGOT = 420: LIVE (0.0)
+|   |   |   |   SGOT = 528: LIVE (0.0)
+|   |   |   |   SGOT = 648: LIVE (0.0)
+|   |   |   SPIDERS = yes: DIE (17.6/0.62)
+|   STEROID = yes: LIVE (20.66/0.25)
+BILIRUBIN = 1.1: LIVE (0.14)
+BILIRUBIN = 1.2: LIVE (4.37/0.62)
+BILIRUBIN = 1.3: LIVE (3.96)
+BILIRUBIN = 1.4: LIVE (9.07/1.45)
+BILIRUBIN = 1.5: LIVE (5.12/0.87)
+BILIRUBIN = 1.6: LIVE (0.91)
+BILIRUBIN = 1.7: DIE (4.44/1.39)
+BILIRUBIN = 1.8: LIVE (0.06)
+BILIRUBIN = 1.9: DIE (14.4)
+BILIRUBIN = 2: DIE (14.67/0.78)
+BILIRUBIN = 2.2: LIVE (0.09)
+BILIRUBIN = 2.3: LIVE (10.51/0.84)
+BILIRUBIN = 2.4: LIVE (0.01)
+BILIRUBIN = 2.5: DIE (0.02)
+BILIRUBIN = 2.8: DIE (3.49)
+BILIRUBIN = 2.9: DIE (0.38)
+BILIRUBIN = 3: LIVE (0.84)
+BILIRUBIN = 3.2: LIVE (1.34)
+BILIRUBIN = 3.5: LIVE (1.0)
+BILIRUBIN = 3.9: DIE (3.09)
+BILIRUBIN = 4.1: DIE (0.86)
+BILIRUBIN = 4.2: DIE (0.54)
+BILIRUBIN = 4.6: LIVE (0.3/0.1)
+BILIRUBIN = 4.8: DIE (0.81)
+BILIRUBIN = 7.6: DIE (0.86)
+BILIRUBIN = 8: DIE (1.37)
+
+Number of Leaves  : 	120
+
+Size of the tree : 	125
+
+
+Weight: 3.0
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         216               87.8049 %
+Incorrectly Classified Instances        30               12.1951 %
+Kappa statistic                          0.7561
+Mean absolute error                      0.1234
+Root mean squared error                  0.3254
+Relative absolute error                 24.6735 %
+Root relative squared error             65.0693 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.886    0.130    0.872      0.886    0.879      0.756    0.944     0.947     DIE
+                 0.870    0.114    0.884      0.870    0.877      0.756    0.944     0.929     LIVE
+Weighted Avg.    0.878    0.122    0.878      0.878    0.878      0.756    0.944     0.938     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 109  14 |   a = DIE
+  16 107 |   b = LIVE
+
