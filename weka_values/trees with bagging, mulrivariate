@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1,3-5,7-10,13-14,16-18
+Instances:    246
+Attributes:   7
+              SEX
+              MALAISE
+              SPIDERS
+              ASCITES
+              ALK_PHOSPHATE
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+SPIDERS = no
+|   MALAISE = no: LIVE (74.0/2.0)
+|   MALAISE = yes
+|   |   HISTOLOGY = no: LIVE (20.0/2.0)
+|   |   HISTOLOGY = yes: DIE (25.0/4.0)
+SPIDERS = yes
+|   SEX = male: LIVE (6.0)
+|   SEX = female: DIE (121.0/23.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         215               87.3984 %
+Incorrectly Classified Instances        31               12.6016 %
+Kappa statistic                          0.748 
+Mean absolute error                      0.2076
+Root mean squared error                  0.3308
+Relative absolute error                 41.5253 %
+Root relative squared error             66.1502 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.220    0.815      0.967    0.885      0.761    0.830     0.761     DIE
+                 0.780    0.033    0.960      0.780    0.861      0.761    0.830     0.840     LIVE
+Weighted Avg.    0.874    0.126    0.888      0.874    0.873      0.761    0.830     0.801     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 119   4 |   a = DIE
+  27  96 |   b = LIVE
+
+
