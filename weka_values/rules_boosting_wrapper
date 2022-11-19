@@ -1,0 +1,187 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1-4,6-10,13,15-16,18-19
+Instances:    246
+Attributes:   6
+              FATIGUE
+              SPIDERS
+              ASCITES
+              BILIRUBIN
+              ALBUMIN
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+JRIP rules:
+===========
+
+(SPIDERS = yes) and (ASCITES = yes) => Class=DIE (47.0/4.0)
+(SPIDERS = yes) and (ALBUMIN = 4) => Class=DIE (38.0/2.0)
+(ASCITES = yes) => Class=DIE (15.0/2.0)
+(SPIDERS = yes) and (BILIRUBIN = 2) => Class=DIE (8.0/1.0)
+(BILIRUBIN = 0.4) => Class=DIE (8.0/1.0)
+(SPIDERS = yes) and (BILIRUBIN = 0.5) => Class=DIE (4.0/0.0)
+(SPIDERS = yes) and (ALBUMIN = 3.3) => Class=DIE (4.0/0.0)
+ => Class=LIVE (122.0/9.0)
+
+Number of Rules : 8
+
+
+Weight: 2.48
+
+JRIP rules:
+===========
+
+(FATIGUE = yes) and (ASCITES = no) => Class=DIE (135.69070252724336/47.08393229770463)
+(ALBUMIN = 2.6) => Class=DIE (9.753303964757713/0.0)
+(FATIGUE = yes) and (BILIRUBIN = 0.7) => Class=DIE (5.418502202643174/0.0)
+(ALBUMIN = 3.3) => Class=DIE (6.502202643171809/0.5418502202643175)
+(BILIRUBIN = 1.9) => Class=DIE (2.16740088105727/0.0)
+(ALBUMIN = 2.8) => Class=DIE (2.7092511013215876/0.0)
+ => Class=LIVE (83.7586366798053/5.418502202643174)
+
+Number of Rules : 7
+
+
+Weight: 1.29
+
+JRIP rules:
+===========
+
+(ASCITES = yes) => Class=DIE (51.3909566809376/24.759976352349877)
+ => Class=LIVE (194.60904331906147/58.995463083920214)
+
+Number of Rules : 2
+
+
+Weight: 0.66
+
+JRIP rules:
+===========
+
+(ALBUMIN = 3.5) => Class=DIE (13.225122554655599/3.119459120418273)
+(ALBUMIN = 3.8) and (BILIRUBIN = 2.3) => Class=DIE (6.060257323458874/0.0)
+(ALBUMIN = 2.8) => Class=DIE (7.369534777195222/0.0)
+(SPIDERS = yes) and (ALBUMIN = 4.2) => Class=DIE (10.379706748481222/0.9525345432236678)
+(ASCITES = no) and (BILIRUBIN = 4.2) => Class=DIE (6.060257323458874/0.0)
+(ALBUMIN = 2.2) => Class=DIE (6.845823795700682/0.0)
+(ALBUMIN = 4) and (FATIGUE = yes) and (ASCITES = no) and (SPIDERS = yes) => Class=DIE (29.64114459852627/11.38028112167224)
+(ALBUMIN = 3.6) => Class=DIE (6.322112814206143/0.26185549074726966)
+(ALBUMIN = 2.6) => Class=DIE (4.713398833450853/0.0)
+(ALBUMIN = 4) and (BILIRUBIN = 0.9) => Class=DIE (6.845823795700683/0.785566472241809)
+(ALBUMIN = 2.1) => Class=DIE (3.8101381728946713/0.0)
+(ALBUMIN = 3.3) and (SPIDERS = yes) => Class=DIE (5.416641436671917/0.0)
+(BILIRUBIN = 0.4) => Class=DIE (8.017137525903024/3.128484021033169)
+ => Class=LIVE (131.292900299696/11.748877029937393)
+
+Number of Rules : 14
+
+
+Weight: 1.92
+
+JRIP rules:
+===========
+
+(ASCITES = yes) and (ALBUMIN = 2.7) => Class=DIE (6.8134630808884085/0.0)
+ => Class=LIVE (239.1865369191116/93.73240644787906)
+
+Number of Rules : 2
+
+
+Weight: 0.49
+
+JRIP rules:
+===========
+
+(SPIDERS = yes) and (BILIRUBIN = 1) => Class=LIVE (52.873186276633255/8.454304098920408)
+(FATIGUE = no) => Class=LIVE (22.60266300306019/2.7753142483826054)
+(ALBUMIN = 2.9) => Class=LIVE (6.052063691120939/0.0)
+(BILIRUBIN = 1.3) => Class=LIVE (4.128452489691785/0.0)
+ => Class=DIE (160.34363453949445/43.069416256828625)
+
+Number of Rules : 5
+
+
+Weight: 1.26
+
+JRIP rules:
+===========
+
+(ALBUMIN = 4) and (SPIDERS = no) and (BILIRUBIN = 1) and (FATIGUE = yes) => Class=DIE (24.996788860872115/4.994480664959552)
+(ASCITES = yes) => Class=DIE (37.83217697977048/15.35575919198953)
+ => Class=LIVE (183.17103415935867/58.20497290281029)
+
+Number of Rules : 3
+
+
+Weight: 0.76
+
+JRIP rules:
+===========
+
+(SPIDERS = yes) => Class=DIE (135.54238428578594/58.62139452409632)
+(BILIRUBIN = 8) => Class=DIE (4.578743238922553/0.0)
+(BILIRUBIN = 1.7) => Class=DIE (4.9163719234709/0.0)
+(BILIRUBIN = 2.3) => Class=DIE (5.312502864307167/0.7337596253846133)
+ => Class=LIVE (95.649997687516/31.34481888190942)
+
+Number of Rules : 5
+
+
+Weight: 0.54
+
+JRIP rules:
+===========
+
+(ALBUMIN = 4) => Class=DIE (90.27445516353538/40.15487840856216)
+ => Class=LIVE (155.7255448364667/64.45705609750772)
+
+Number of Rules : 2
+
+
+Weight: 0.3
+
+JRIP rules:
+===========
+
+ => Class=LIVE (246.0000000000015/119.3882668768353)
+
+Number of Rules : 1
+
+
+Weight: 0.06
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         219               89.0244 %
+Incorrectly Classified Instances        27               10.9756 %
+Kappa statistic                          0.7805
+Mean absolute error                      0.1287
+Root mean squared error                  0.2914
+Relative absolute error                 25.7444 %
+Root relative squared error             58.2635 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.911    0.130    0.875      0.911    0.892      0.781    0.937     0.899     DIE
+                 0.870    0.089    0.907      0.870    0.888      0.781    0.937     0.943     LIVE
+Weighted Avg.    0.890    0.110    0.891      0.890    0.890      0.781    0.937     0.921     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 112  11 |   a = DIE
+  16 107 |   b = LIVE
+
