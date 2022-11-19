@@ -1,0 +1,124 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1,3-4,7-10,13-14,16-18
+Instances:    246
+Attributes:   8
+              SEX
+              FATIGUE
+              MALAISE
+              SPIDERS
+              ASCITES
+              ALK_PHOSPHATE
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:39/39 (246)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class DIE :
+-3.93 + 
+[SEX=female] * 1.16 +
+[FATIGUE=yes] * 1.18 +
+[MALAISE=yes] * 0.71 +
+[SPIDERS=yes] * 1.12 +
+[ASCITES=yes] * 0.92 +
+[ALK_PHOSPHATE=62] * 1.13 +
+[ALK_PHOSPHATE=63] * 0.69 +
+[ALK_PHOSPHATE=65] * 1.97 +
+[ALK_PHOSPHATE=67] * 1.14 +
+[ALK_PHOSPHATE=72] * -0.89 +
+[ALK_PHOSPHATE=75] * -1.22 +
+[ALK_PHOSPHATE=82] * 1.12 +
+[ALK_PHOSPHATE=84] * 2.06 +
+[ALK_PHOSPHATE=85] * 0.32 +
+[ALK_PHOSPHATE=86] * 0.73 +
+[ALK_PHOSPHATE=109] * 1.51 +
+[ALK_PHOSPHATE=114] * -1.52 +
+[ALK_PHOSPHATE=125] * -1.25 +
+[ALK_PHOSPHATE=133] * -1.27 +
+[ALK_PHOSPHATE=135] * 1.24 +
+[ALK_PHOSPHATE=147] * -1.51 +
+[ALK_PHOSPHATE=155] * 1.28 +
+[ALK_PHOSPHATE=158] * -1.51 +
+[ALK_PHOSPHATE=160] * -1.53 +
+[ALK_PHOSPHATE=167] * 1.52 +
+[ALK_PHOSPHATE=180] * -2.57 +
+[ALK_PHOSPHATE=181] * -1.51 +
+[ALK_PHOSPHATE=215] * -1.48 +
+[ALK_PHOSPHATE=243] * 3.04 +
+[ALK_PHOSPHATE=280] * 1.52 +
+[ALK_PHOSPHATE=295] * -1.51 +
+[HISTOLOGY=yes] * 0.41
+
+Class LIVE :
+3.93 + 
+[SEX=female] * -1.16 +
+[FATIGUE=yes] * -1.18 +
+[MALAISE=yes] * -0.71 +
+[SPIDERS=yes] * -1.12 +
+[ASCITES=yes] * -0.92 +
+[ALK_PHOSPHATE=62] * -1.13 +
+[ALK_PHOSPHATE=63] * -0.69 +
+[ALK_PHOSPHATE=65] * -1.97 +
+[ALK_PHOSPHATE=67] * -1.14 +
+[ALK_PHOSPHATE=72] * 0.89 +
+[ALK_PHOSPHATE=75] * 1.22 +
+[ALK_PHOSPHATE=82] * -1.12 +
+[ALK_PHOSPHATE=84] * -2.06 +
+[ALK_PHOSPHATE=85] * -0.32 +
+[ALK_PHOSPHATE=86] * -0.73 +
+[ALK_PHOSPHATE=109] * -1.51 +
+[ALK_PHOSPHATE=114] * 1.52 +
+[ALK_PHOSPHATE=125] * 1.25 +
+[ALK_PHOSPHATE=133] * 1.27 +
+[ALK_PHOSPHATE=135] * -1.24 +
+[ALK_PHOSPHATE=147] * 1.51 +
+[ALK_PHOSPHATE=155] * -1.28 +
+[ALK_PHOSPHATE=158] * 1.51 +
+[ALK_PHOSPHATE=160] * 1.53 +
+[ALK_PHOSPHATE=167] * -1.52 +
+[ALK_PHOSPHATE=180] * 2.57 +
+[ALK_PHOSPHATE=181] * 1.51 +
+[ALK_PHOSPHATE=215] * 1.48 +
+[ALK_PHOSPHATE=243] * -3.04 +
+[ALK_PHOSPHATE=280] * -1.52 +
+[ALK_PHOSPHATE=295] * 1.51 +
+[HISTOLOGY=yes] * -0.41
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         220               89.4309 %
+Incorrectly Classified Instances        26               10.5691 %
+Kappa statistic                          0.7886
+Mean absolute error                      0.1485
+Root mean squared error                  0.2957
+Relative absolute error                 29.6973 %
+Root relative squared error             59.1262 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.919    0.130    0.876      0.919    0.897      0.790    0.943     0.934     DIE
+                 0.870    0.081    0.915      0.870    0.892      0.790    0.943     0.946     LIVE
+Weighted Avg.    0.894    0.106    0.895      0.894    0.894      0.790    0.943     0.940     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 113  10 |   a = DIE
+  16 107 |   b = LIVE
+
