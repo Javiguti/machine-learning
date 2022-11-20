@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1-weka.filters.unsupervised.attribute.Remove-R1,3-4,7-10,13-14,16-18
+Instances:    246
+Attributes:   8
+              SEX
+              FATIGUE
+              MALAISE
+              SPIDERS
+              ASCITES
+              ALK_PHOSPHATE
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+SEX(2): Class ALK_PHOSPHATE 
+FATIGUE(2): Class MALAISE 
+MALAISE(2): Class 
+SPIDERS(2): Class FATIGUE 
+ASCITES(2): Class MALAISE 
+ALK_PHOSPHATE(83): Class MALAISE 
+HISTOLOGY(2): Class ASCITES 
+Class(2): 
+LogScore Bayes: -1684.86533443685
+LogScore BDeu: -4781.218117777696
+LogScore MDL: -3819.6478084268365
+LogScore ENTROPY: -2407.5302694601855
+LogScore AIC: -2920.530269460185
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         212               86.1789 %
+Incorrectly Classified Instances        34               13.8211 %
+Kappa statistic                          0.7236
+Mean absolute error                      0.1763
+Root mean squared error                  0.3266
+Relative absolute error                 35.2582 %
+Root relative squared error             65.3121 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.935    0.211    0.816      0.935    0.871      0.731    0.935     0.928     DIE
+                 0.789    0.065    0.924      0.789    0.851      0.731    0.935     0.940     LIVE
+Weighted Avg.    0.862    0.138    0.870      0.862    0.861      0.731    0.935     0.934     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 115   8 |   a = DIE
+  26  97 |   b = LIVE
+
