@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     hepatitis-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.instance.SMOTE-C0-K5-P285.0-S1
+Instances:    246
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=20 #classindex=19
+Network structure (nodes followed by parents)
+AGE(49): Class ALK_PHOSPHATE 
+SEX(2): Class AGE 
+STEROID(2): Class ALK_PHOSPHATE 
+ANTIVIRALS(2): Class PROTIME 
+FATIGUE(2): Class MALAISE 
+MALAISE(2): Class ALK_PHOSPHATE 
+ANOREXIA(2): Class MALAISE 
+LIVER_BIG(2): Class LIVER_FIRM 
+LIVER_FIRM(2): Class 
+SPLEEN_PALPABLE(2): Class AGE 
+SPIDERS(2): Class PROTIME 
+ASCITES(2): Class ALBUMIN 
+VARICES(2): Class LIVER_FIRM 
+BILIRUBIN(34): Class AGE 
+ALK_PHOSPHATE(83): Class LIVER_FIRM 
+SGOT(84): Class BILIRUBIN 
+ALBUMIN(29): Class AGE 
+PROTIME(44): Class ALK_PHOSPHATE 
+HISTOLOGY(2): Class AGE 
+Class(2): 
+LogScore Bayes: -6252.370340931752
+LogScore BDeu: -260928.35808551344
+LogScore MDL: -136597.97521194947
+LogScore ENTROPY: -59702.256983814754
+LogScore AIC: -87637.25698381368
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         218               88.6179 %
+Incorrectly Classified Instances        28               11.3821 %
+Kappa statistic                          0.7724
+Mean absolute error                      0.1348
+Root mean squared error                  0.2959
+Relative absolute error                 26.9582 %
+Root relative squared error             59.1804 %
+Total Number of Instances              246     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.935    0.163    0.852      0.935    0.891      0.776    0.970     0.974     DIE
+                 0.837    0.065    0.928      0.837    0.880      0.776    0.970     0.968     LIVE
+Weighted Avg.    0.886    0.114    0.890      0.886    0.886      0.776    0.970     0.971     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 115   8 |   a = DIE
+  20 103 |   b = LIVE
+
