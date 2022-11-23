@@ -1,0 +1,409 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.Cobweb -A 1.0 -C 0.28209479177387814 -S 42
+Relation:     hepatitis-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    155
+Attributes:   19
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+Number of merges: 40
+Number of splits: 22
+Number of clusters: 153
+
+node 0 [155]
+|   node 1 [100]
+|   |   leaf 2 [48]
+|   node 1 [100]
+|   |   node 3 [23]
+|   |   |   node 4 [7]
+|   |   |   |   node 5 [2]
+|   |   |   |   |   leaf 6 [1]
+|   |   |   |   node 5 [2]
+|   |   |   |   |   leaf 7 [1]
+|   |   |   node 4 [7]
+|   |   |   |   node 8 [2]
+|   |   |   |   |   leaf 9 [1]
+|   |   |   |   node 8 [2]
+|   |   |   |   |   leaf 10 [1]
+|   |   |   node 4 [7]
+|   |   |   |   leaf 11 [1]
+|   |   |   node 4 [7]
+|   |   |   |   leaf 12 [1]
+|   |   |   node 4 [7]
+|   |   |   |   leaf 13 [1]
+|   |   node 3 [23]
+|   |   |   node 14 [3]
+|   |   |   |   leaf 15 [1]
+|   |   |   node 14 [3]
+|   |   |   |   leaf 16 [1]
+|   |   |   node 14 [3]
+|   |   |   |   leaf 17 [1]
+|   |   node 3 [23]
+|   |   |   node 18 [8]
+|   |   |   |   leaf 19 [1]
+|   |   |   node 18 [8]
+|   |   |   |   leaf 20 [1]
+|   |   |   node 18 [8]
+|   |   |   |   leaf 21 [1]
+|   |   |   node 18 [8]
+|   |   |   |   leaf 22 [1]
+|   |   |   node 18 [8]
+|   |   |   |   leaf 23 [1]
+|   |   |   node 18 [8]
+|   |   |   |   node 24 [3]
+|   |   |   |   |   leaf 25 [1]
+|   |   |   |   node 24 [3]
+|   |   |   |   |   leaf 26 [1]
+|   |   |   |   node 24 [3]
+|   |   |   |   |   leaf 27 [1]
+|   |   node 3 [23]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 29 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 30 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 31 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 32 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 33 [1]
+|   node 1 [100]
+|   |   node 34 [29]
+|   |   |   node 35 [3]
+|   |   |   |   leaf 36 [1]
+|   |   |   node 35 [3]
+|   |   |   |   leaf 37 [1]
+|   |   |   node 35 [3]
+|   |   |   |   leaf 38 [1]
+|   |   node 34 [29]
+|   |   |   node 39 [5]
+|   |   |   |   leaf 40 [1]
+|   |   |   node 39 [5]
+|   |   |   |   leaf 41 [1]
+|   |   |   node 39 [5]
+|   |   |   |   leaf 42 [1]
+|   |   |   node 39 [5]
+|   |   |   |   leaf 43 [1]
+|   |   |   node 39 [5]
+|   |   |   |   leaf 44 [1]
+|   |   node 34 [29]
+|   |   |   node 45 [13]
+|   |   |   |   node 46 [2]
+|   |   |   |   |   leaf 47 [1]
+|   |   |   |   node 46 [2]
+|   |   |   |   |   leaf 48 [1]
+|   |   |   node 45 [13]
+|   |   |   |   leaf 49 [1]
+|   |   |   node 45 [13]
+|   |   |   |   node 50 [3]
+|   |   |   |   |   leaf 51 [1]
+|   |   |   |   node 50 [3]
+|   |   |   |   |   leaf 52 [1]
+|   |   |   |   node 50 [3]
+|   |   |   |   |   leaf 53 [1]
+|   |   |   node 45 [13]
+|   |   |   |   node 54 [4]
+|   |   |   |   |   leaf 55 [1]
+|   |   |   |   node 54 [4]
+|   |   |   |   |   node 56 [2]
+|   |   |   |   |   |   leaf 57 [1]
+|   |   |   |   |   node 56 [2]
+|   |   |   |   |   |   leaf 58 [1]
+|   |   |   |   node 54 [4]
+|   |   |   |   |   leaf 59 [1]
+|   |   |   node 45 [13]
+|   |   |   |   leaf 60 [1]
+|   |   |   node 45 [13]
+|   |   |   |   leaf 61 [1]
+|   |   |   node 45 [13]
+|   |   |   |   leaf 62 [1]
+|   |   node 34 [29]
+|   |   |   node 63 [8]
+|   |   |   |   leaf 64 [1]
+|   |   |   node 63 [8]
+|   |   |   |   node 65 [3]
+|   |   |   |   |   leaf 66 [1]
+|   |   |   |   node 65 [3]
+|   |   |   |   |   leaf 67 [1]
+|   |   |   |   node 65 [3]
+|   |   |   |   |   leaf 68 [1]
+|   |   |   node 63 [8]
+|   |   |   |   node 69 [2]
+|   |   |   |   |   leaf 70 [1]
+|   |   |   |   node 69 [2]
+|   |   |   |   |   leaf 71 [1]
+|   |   |   node 63 [8]
+|   |   |   |   node 72 [2]
+|   |   |   |   |   leaf 73 [1]
+|   |   |   |   node 72 [2]
+|   |   |   |   |   leaf 74 [1]
+node 0 [155]
+|   node 75 [55]
+|   |   node 76 [14]
+|   |   |   node 77 [2]
+|   |   |   |   leaf 78 [1]
+|   |   |   node 77 [2]
+|   |   |   |   leaf 79 [1]
+|   |   node 76 [14]
+|   |   |   node 80 [3]
+|   |   |   |   leaf 81 [1]
+|   |   |   node 80 [3]
+|   |   |   |   leaf 82 [1]
+|   |   |   node 80 [3]
+|   |   |   |   leaf 83 [1]
+|   |   node 76 [14]
+|   |   |   node 84 [4]
+|   |   |   |   leaf 85 [1]
+|   |   |   node 84 [4]
+|   |   |   |   leaf 86 [1]
+|   |   |   node 84 [4]
+|   |   |   |   leaf 87 [1]
+|   |   |   node 84 [4]
+|   |   |   |   leaf 88 [1]
+|   |   node 76 [14]
+|   |   |   node 89 [5]
+|   |   |   |   node 90 [3]
+|   |   |   |   |   leaf 91 [1]
+|   |   |   |   node 90 [3]
+|   |   |   |   |   leaf 92 [1]
+|   |   |   |   node 90 [3]
+|   |   |   |   |   leaf 93 [1]
+|   |   |   node 89 [5]
+|   |   |   |   leaf 94 [1]
+|   |   |   node 89 [5]
+|   |   |   |   leaf 95 [1]
+|   node 75 [55]
+|   |   node 96 [26]
+|   |   |   node 97 [3]
+|   |   |   |   leaf 98 [1]
+|   |   |   node 97 [3]
+|   |   |   |   leaf 99 [1]
+|   |   |   node 97 [3]
+|   |   |   |   leaf 100 [1]
+|   |   node 96 [26]
+|   |   |   node 101 [5]
+|   |   |   |   leaf 102 [1]
+|   |   |   node 101 [5]
+|   |   |   |   leaf 103 [1]
+|   |   |   node 101 [5]
+|   |   |   |   leaf 104 [1]
+|   |   |   node 101 [5]
+|   |   |   |   leaf 105 [1]
+|   |   |   node 101 [5]
+|   |   |   |   leaf 106 [1]
+|   |   node 96 [26]
+|   |   |   node 107 [11]
+|   |   |   |   node 108 [3]
+|   |   |   |   |   leaf 109 [1]
+|   |   |   |   node 108 [3]
+|   |   |   |   |   leaf 110 [1]
+|   |   |   |   node 108 [3]
+|   |   |   |   |   leaf 111 [1]
+|   |   |   node 107 [11]
+|   |   |   |   leaf 112 [1]
+|   |   |   node 107 [11]
+|   |   |   |   node 113 [2]
+|   |   |   |   |   leaf 114 [1]
+|   |   |   |   node 113 [2]
+|   |   |   |   |   leaf 115 [1]
+|   |   |   node 107 [11]
+|   |   |   |   node 116 [2]
+|   |   |   |   |   leaf 117 [1]
+|   |   |   |   node 116 [2]
+|   |   |   |   |   leaf 118 [1]
+|   |   |   node 107 [11]
+|   |   |   |   node 119 [3]
+|   |   |   |   |   leaf 120 [1]
+|   |   |   |   node 119 [3]
+|   |   |   |   |   leaf 121 [1]
+|   |   |   |   node 119 [3]
+|   |   |   |   |   leaf 122 [1]
+|   |   node 96 [26]
+|   |   |   node 123 [7]
+|   |   |   |   leaf 124 [1]
+|   |   |   node 123 [7]
+|   |   |   |   leaf 125 [1]
+|   |   |   node 123 [7]
+|   |   |   |   leaf 126 [1]
+|   |   |   node 123 [7]
+|   |   |   |   leaf 127 [1]
+|   |   |   node 123 [7]
+|   |   |   |   node 128 [3]
+|   |   |   |   |   leaf 129 [1]
+|   |   |   |   node 128 [3]
+|   |   |   |   |   leaf 130 [1]
+|   |   |   |   node 128 [3]
+|   |   |   |   |   leaf 131 [1]
+|   node 75 [55]
+|   |   node 132 [15]
+|   |   |   node 133 [4]
+|   |   |   |   leaf 134 [1]
+|   |   |   node 133 [4]
+|   |   |   |   leaf 135 [1]
+|   |   |   node 133 [4]
+|   |   |   |   leaf 136 [1]
+|   |   |   node 133 [4]
+|   |   |   |   leaf 137 [1]
+|   |   node 132 [15]
+|   |   |   leaf 138 [1]
+|   |   node 132 [15]
+|   |   |   leaf 139 [1]
+|   |   node 132 [15]
+|   |   |   node 140 [7]
+|   |   |   |   leaf 141 [1]
+|   |   |   node 140 [7]
+|   |   |   |   node 142 [2]
+|   |   |   |   |   leaf 143 [1]
+|   |   |   |   node 142 [2]
+|   |   |   |   |   leaf 144 [1]
+|   |   |   node 140 [7]
+|   |   |   |   leaf 145 [1]
+|   |   |   node 140 [7]
+|   |   |   |   node 146 [2]
+|   |   |   |   |   leaf 147 [1]
+|   |   |   |   node 146 [2]
+|   |   |   |   |   leaf 148 [1]
+|   |   |   node 140 [7]
+|   |   |   |   leaf 149 [1]
+|   |   node 132 [15]
+|   |   |   node 150 [2]
+|   |   |   |   leaf 151 [1]
+|   |   |   node 150 [2]
+|   |   |   |   leaf 152 [1]
+
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+  2       46 ( 30%)
+  6        1 (  1%)
+  7        1 (  1%)
+  9        1 (  1%)
+ 10        1 (  1%)
+ 11        1 (  1%)
+ 12        1 (  1%)
+ 13        1 (  1%)
+ 14        1 (  1%)
+ 15        1 (  1%)
+ 17        1 (  1%)
+ 19        1 (  1%)
+ 20        1 (  1%)
+ 21        1 (  1%)
+ 22        1 (  1%)
+ 23        1 (  1%)
+ 25        1 (  1%)
+ 27        1 (  1%)
+ 29        2 (  1%)
+ 30        1 (  1%)
+ 31        2 (  1%)
+ 33        1 (  1%)
+ 36        1 (  1%)
+ 37        1 (  1%)
+ 38        1 (  1%)
+ 41        1 (  1%)
+ 42        1 (  1%)
+ 43        1 (  1%)
+ 44        1 (  1%)
+ 47        1 (  1%)
+ 48        1 (  1%)
+ 49        1 (  1%)
+ 51        1 (  1%)
+ 53        1 (  1%)
+ 55        1 (  1%)
+ 57        1 (  1%)
+ 58        1 (  1%)
+ 59        1 (  1%)
+ 60        1 (  1%)
+ 61        2 (  1%)
+ 62        1 (  1%)
+ 64        1 (  1%)
+ 66        1 (  1%)
+ 67        1 (  1%)
+ 68        1 (  1%)
+ 70        1 (  1%)
+ 71        1 (  1%)
+ 73        1 (  1%)
+ 74        1 (  1%)
+ 78        1 (  1%)
+ 79        1 (  1%)
+ 81        1 (  1%)
+ 82        1 (  1%)
+ 83        1 (  1%)
+ 85        1 (  1%)
+ 86        1 (  1%)
+ 87        1 (  1%)
+ 88        1 (  1%)
+ 91        1 (  1%)
+ 92        1 (  1%)
+ 93        1 (  1%)
+ 94        1 (  1%)
+ 95        1 (  1%)
+ 97        1 (  1%)
+ 98        1 (  1%)
+ 99        1 (  1%)
+100        1 (  1%)
+102        1 (  1%)
+103        1 (  1%)
+104        1 (  1%)
+105        1 (  1%)
+106        1 (  1%)
+109        1 (  1%)
+110        1 (  1%)
+111        1 (  1%)
+112        1 (  1%)
+114        1 (  1%)
+115        1 (  1%)
+117        1 (  1%)
+118        1 (  1%)
+120        1 (  1%)
+121        1 (  1%)
+122        1 (  1%)
+124        1 (  1%)
+125        1 (  1%)
+126        1 (  1%)
+127        1 (  1%)
+129        1 (  1%)
+130        1 (  1%)
+131        1 (  1%)
+134        1 (  1%)
+135        1 (  1%)
+136        1 (  1%)
+137        1 (  1%)
+138        3 (  2%)
+139        1 (  1%)
+141        1 (  1%)
+143        1 (  1%)
+144        1 (  1%)
+145        1 (  1%)
+147        1 (  1%)
+148        1 (  1%)
+149        1 (  1%)
+151        1 (  1%)
+152        1 (  1%)
+
