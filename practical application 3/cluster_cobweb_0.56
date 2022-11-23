@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.Cobweb -A 1.0 -C 0.564189583548 -S 42
+Relation:     hepatitis-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    155
+Attributes:   19
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+Number of merges: 11
+Number of splits: 5
+Number of clusters: 1
+
+leaf 0 [155]
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      155 (100%)
+
