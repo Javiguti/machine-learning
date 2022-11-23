@@ -1,0 +1,236 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.Cobweb -A 1.0 -C 0.423142187661 -S 42
+Relation:     hepatitis-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    155
+Attributes:   19
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+Number of merges: 25
+Number of splits: 14
+Number of clusters: 80
+
+node 0 [155]
+|   leaf 1 [100]
+node 0 [155]
+|   node 2 [55]
+|   |   node 3 [14]
+|   |   |   node 4 [2]
+|   |   |   |   leaf 5 [1]
+|   |   |   node 4 [2]
+|   |   |   |   leaf 6 [1]
+|   |   node 3 [14]
+|   |   |   node 7 [3]
+|   |   |   |   leaf 8 [1]
+|   |   |   node 7 [3]
+|   |   |   |   leaf 9 [1]
+|   |   |   node 7 [3]
+|   |   |   |   leaf 10 [1]
+|   |   node 3 [14]
+|   |   |   node 11 [4]
+|   |   |   |   leaf 12 [1]
+|   |   |   node 11 [4]
+|   |   |   |   leaf 13 [1]
+|   |   |   node 11 [4]
+|   |   |   |   leaf 14 [1]
+|   |   |   node 11 [4]
+|   |   |   |   leaf 15 [1]
+|   |   node 3 [14]
+|   |   |   node 16 [5]
+|   |   |   |   node 17 [3]
+|   |   |   |   |   leaf 18 [1]
+|   |   |   |   node 17 [3]
+|   |   |   |   |   leaf 19 [1]
+|   |   |   |   node 17 [3]
+|   |   |   |   |   leaf 20 [1]
+|   |   |   node 16 [5]
+|   |   |   |   leaf 21 [1]
+|   |   |   node 16 [5]
+|   |   |   |   leaf 22 [1]
+|   node 2 [55]
+|   |   node 23 [26]
+|   |   |   node 24 [3]
+|   |   |   |   leaf 25 [1]
+|   |   |   node 24 [3]
+|   |   |   |   leaf 26 [1]
+|   |   |   node 24 [3]
+|   |   |   |   leaf 27 [1]
+|   |   node 23 [26]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 29 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 30 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 31 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 32 [1]
+|   |   |   node 28 [5]
+|   |   |   |   leaf 33 [1]
+|   |   node 23 [26]
+|   |   |   node 34 [11]
+|   |   |   |   node 35 [3]
+|   |   |   |   |   leaf 36 [1]
+|   |   |   |   node 35 [3]
+|   |   |   |   |   leaf 37 [1]
+|   |   |   |   node 35 [3]
+|   |   |   |   |   leaf 38 [1]
+|   |   |   node 34 [11]
+|   |   |   |   leaf 39 [1]
+|   |   |   node 34 [11]
+|   |   |   |   node 40 [2]
+|   |   |   |   |   leaf 41 [1]
+|   |   |   |   node 40 [2]
+|   |   |   |   |   leaf 42 [1]
+|   |   |   node 34 [11]
+|   |   |   |   node 43 [2]
+|   |   |   |   |   leaf 44 [1]
+|   |   |   |   node 43 [2]
+|   |   |   |   |   leaf 45 [1]
+|   |   |   node 34 [11]
+|   |   |   |   node 46 [3]
+|   |   |   |   |   leaf 47 [1]
+|   |   |   |   node 46 [3]
+|   |   |   |   |   leaf 48 [1]
+|   |   |   |   node 46 [3]
+|   |   |   |   |   leaf 49 [1]
+|   |   node 23 [26]
+|   |   |   node 50 [7]
+|   |   |   |   leaf 51 [1]
+|   |   |   node 50 [7]
+|   |   |   |   leaf 52 [1]
+|   |   |   node 50 [7]
+|   |   |   |   leaf 53 [1]
+|   |   |   node 50 [7]
+|   |   |   |   leaf 54 [1]
+|   |   |   node 50 [7]
+|   |   |   |   node 55 [3]
+|   |   |   |   |   leaf 56 [1]
+|   |   |   |   node 55 [3]
+|   |   |   |   |   leaf 57 [1]
+|   |   |   |   node 55 [3]
+|   |   |   |   |   leaf 58 [1]
+|   node 2 [55]
+|   |   node 59 [15]
+|   |   |   node 60 [4]
+|   |   |   |   leaf 61 [1]
+|   |   |   node 60 [4]
+|   |   |   |   leaf 62 [1]
+|   |   |   node 60 [4]
+|   |   |   |   leaf 63 [1]
+|   |   |   node 60 [4]
+|   |   |   |   leaf 64 [1]
+|   |   node 59 [15]
+|   |   |   leaf 65 [1]
+|   |   node 59 [15]
+|   |   |   leaf 66 [1]
+|   |   node 59 [15]
+|   |   |   node 67 [7]
+|   |   |   |   leaf 68 [1]
+|   |   |   node 67 [7]
+|   |   |   |   node 69 [2]
+|   |   |   |   |   leaf 70 [1]
+|   |   |   |   node 69 [2]
+|   |   |   |   |   leaf 71 [1]
+|   |   |   node 67 [7]
+|   |   |   |   leaf 72 [1]
+|   |   |   node 67 [7]
+|   |   |   |   node 73 [2]
+|   |   |   |   |   leaf 74 [1]
+|   |   |   |   node 73 [2]
+|   |   |   |   |   leaf 75 [1]
+|   |   |   node 67 [7]
+|   |   |   |   leaf 76 [1]
+|   |   node 59 [15]
+|   |   |   node 77 [2]
+|   |   |   |   leaf 78 [1]
+|   |   |   node 77 [2]
+|   |   |   |   leaf 79 [1]
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+ 1       97 ( 63%)
+ 5        1 (  1%)
+ 6        1 (  1%)
+ 8        1 (  1%)
+ 9        1 (  1%)
+10        1 (  1%)
+12        1 (  1%)
+13        1 (  1%)
+14        1 (  1%)
+15        1 (  1%)
+18        1 (  1%)
+19        1 (  1%)
+20        1 (  1%)
+21        1 (  1%)
+22        1 (  1%)
+24        1 (  1%)
+25        1 (  1%)
+26        1 (  1%)
+27        1 (  1%)
+29        1 (  1%)
+30        1 (  1%)
+31        1 (  1%)
+32        1 (  1%)
+33        1 (  1%)
+36        1 (  1%)
+37        1 (  1%)
+38        1 (  1%)
+39        1 (  1%)
+41        1 (  1%)
+42        1 (  1%)
+44        1 (  1%)
+45        1 (  1%)
+47        1 (  1%)
+48        1 (  1%)
+49        1 (  1%)
+51        1 (  1%)
+52        1 (  1%)
+53        1 (  1%)
+54        1 (  1%)
+56        1 (  1%)
+57        1 (  1%)
+58        1 (  1%)
+61        1 (  1%)
+62        1 (  1%)
+63        1 (  1%)
+64        1 (  1%)
+65        3 (  2%)
+66        1 (  1%)
+68        1 (  1%)
+70        1 (  1%)
+71        1 (  1%)
+72        1 (  1%)
+74        1 (  1%)
+75        1 (  1%)
+76        1 (  1%)
+78        1 (  1%)
+79        1 (  1%)
+
