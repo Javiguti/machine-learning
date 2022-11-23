@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 5 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     hepatitis-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    155
+Attributes:   19
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 1052.0
+
+Initial starting points (random):
+
+Cluster 0: 72,female,yes,yes,yes,no,no,yes,yes,no,no,no,no,1,115,52,3.4,50,yes
+Cluster 1: 23,female,yes,no,yes,yes,yes,yes,no,yes,no,no,no,1.3,194,150,4.1,90,no
+Cluster 2: 51,female,no,no,yes,no,yes,yes,no,yes,yes,no,no,1.427517,105.325397,85.89404,3.817266,61.852273,no
+Cluster 3: 54,female,yes,no,no,no,no,yes,no,no,no,no,no,1,85,30,4.5,0,yes
+Cluster 4: 23,female,yes,no,no,no,no,yes,no,no,no,no,no,4.6,56,16,4.6,61.852273,no
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                               Cluster#
+Attribute          Full Data          0          1          2          3          4
+                     (155.0)     (38.0)     (26.0)     (30.0)     (26.0)     (35.0)
+===================================================================================
+AGE                       30         30         28         44         36         30
+SEX                   female     female     female     female     female     female
+STEROID                  yes         no        yes         no        yes        yes
+ANTIVIRALS                no         no         no         no         no         no
+FATIGUE                  yes        yes        yes        yes         no         no
+MALAISE                   no         no        yes        yes         no         no
+ANOREXIA                  no         no        yes         no         no         no
+LIVER_BIG                yes        yes        yes        yes        yes        yes
+LIVER_FIRM                no        yes         no         no         no         no
+SPLEEN_PALPABLE           no         no         no         no         no         no
+SPIDERS                   no         no         no        yes         no         no
+ASCITES                   no         no         no         no         no         no
+VARICES                   no         no         no         no         no         no
+BILIRUBIN                  1          1        0.7   1.427517          1        0.7
+ALK_PHOSPHATE     105.325397         78 105.325397 105.325397         85 105.325397
+SGOT                      20         20         45         55         30         18
+ALBUMIN                    4        3.8        4.1   3.817266          4          4
+PROTIME            61.852273  61.852273  61.852273  61.852273  61.852273  61.852273
+HISTOLOGY                 no        yes         no        yes        yes         no
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       38 ( 25%)
+1       26 ( 17%)
+2       30 ( 19%)
+3       26 ( 17%)
+4       35 ( 23%)
+
