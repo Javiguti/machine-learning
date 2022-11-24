@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     hepatitis-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    155
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 1149.0
+
+Initial starting points (random):
+
+Cluster 0: 72,female,yes,yes,yes,no,no,yes,yes,no,no,no,no,1,115,52,3.4,50,yes,LIVE
+Cluster 1: 23,female,yes,no,yes,yes,yes,yes,no,yes,no,no,no,1.3,194,150,4.1,90,no,LIVE
+Cluster 2: 51,female,no,no,yes,no,yes,yes,no,yes,yes,no,no,1.427517,105.325397,85.89404,3.817266,61.852273,no,DIE
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                               Cluster#
+Attribute          Full Data          0          1          2
+                     (155.0)     (86.0)     (29.0)     (40.0)
+=============================================================
+AGE                       30         30         28         47
+SEX                   female     female     female     female
+STEROID                  yes        yes        yes         no
+ANTIVIRALS                no         no         no         no
+FATIGUE                  yes         no        yes        yes
+MALAISE                   no         no        yes        yes
+ANOREXIA                  no         no        yes         no
+LIVER_BIG                yes        yes        yes        yes
+LIVER_FIRM                no         no         no         no
+SPLEEN_PALPABLE           no         no         no         no
+SPIDERS                   no         no         no        yes
+ASCITES                   no         no         no         no
+VARICES                   no         no         no         no
+BILIRUBIN                  1          1        0.7   1.427517
+ALK_PHOSPHATE     105.325397         85 105.325397 105.325397
+SGOT                      20         20         48         55
+ALBUMIN                    4          4        4.4   3.817266
+PROTIME            61.852273  61.852273  61.852273  61.852273
+HISTOLOGY                 no         no         no        yes
+Class                   LIVE       LIVE       LIVE        DIE
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       86 ( 55%)
+1       29 ( 19%)
+2       40 ( 26%)
+
