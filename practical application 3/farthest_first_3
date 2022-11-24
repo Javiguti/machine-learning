@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.FarthestFirst -N 3 -S 1
+Relation:     hepatitis-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    155
+Attributes:   20
+              AGE
+              SEX
+              STEROID
+              ANTIVIRALS
+              FATIGUE
+              MALAISE
+              ANOREXIA
+              LIVER_BIG
+              LIVER_FIRM
+              SPLEEN_PALPABLE
+              SPIDERS
+              ASCITES
+              VARICES
+              BILIRUBIN
+              ALK_PHOSPHATE
+              SGOT
+              ALBUMIN
+              PROTIME
+              HISTOLOGY
+              Class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+FarthestFirst
+==============
+
+Cluster centroids:
+
+Cluster 0
+	 32 female no yes yes yes no yes no no no no no 1 55 45 4.1 56 no LIVE
+Cluster 1
+	 25 female yes no yes no no no yes yes yes yes yes 1.3 181 181 4.5 57 yes LIVE
+Cluster 2
+	 20 male no no yes yes yes no yes yes yes no no 2.3 150 68 3.9 61.852273 no LIVE
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      115 ( 74%)
+1       22 ( 14%)
+2       18 ( 12%)
+
